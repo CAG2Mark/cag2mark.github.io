@@ -1,0 +1,68 @@
+#cover {
+    height: 100vh;
+}
+
+#projects{
+    height: 80vh;
+    background: red;
+}
+
+#skills {
+    height: 80vh;
+}
+
+#contact {
+    background: red;
+    height: 80vh;
+}
+
+#cover-page-item1 {
+    margin-top: 128px;
+}
+
+#cover-page-item2, #cover-page-item3 {
+    margin-left: 6vw;
+    color: var(--accent-color);
+}
+
+.cover-intro {
+
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.cover-intro-large {
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 110px;
+}
+
+@media (max-width: 1100px) {
+
+    .cover-intro {
+
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    .cover-intro-large {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cover-intro {
+
+        font-size: 8vw;
+        line-height: 8.5vw;
+    }
+    
+    .cover-intro-large {
+        font-size: 14.5vw;
+        line-height: 15vw;
+    }
+
+}
