@@ -61,6 +61,25 @@ h4 {
 
 /* #region text stlyes */
 
+/* #region element styles */
+
+.light-button {
+    font: 24px "Roboto Mono", 'Consolas', 'Courier New', Courier, monospace;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 200ms color, 200ms background-color;
+    padding: 8px;
+    cursor: pointer;;
+}
+
+.light-button:hover {
+    background-color: white;
+    color: var(--accent-color);
+}
+
+/* #endregion */
+
 .light-text {
     color: white;
 }
@@ -76,6 +95,7 @@ h4 {
     font-weight: bold;
     font-size: 32px;
 }
+/* #endregion */
 
 /* #region navigation */
 
