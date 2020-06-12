@@ -8,9 +8,11 @@
 
     <base href="index.html" target="_blank">
 
-    <!-- GLOBAL CSS-->
+    <!-- GLOBAL CSS & FONTS -->
     <link rel="stylesheet" href="https://use.typekit.net/utd2ycl.css">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/animation-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- PAGE SPECIFIC CSS -->
     <link rel="stylesheet" href="styles/home.css">
@@ -24,10 +26,13 @@
     <div class="navigation navigation-background">
         <div class="standard-width">
             <ul class="navigation-list" id="navigation-list">
-                <li><a class="linkfix navigation-selected" href="index.html" target="_self" data-section-pair="cover">Home</a></li>
-                <li><a class="linkfix" href="index.html#projects" target="_self" data-section-pair="projects">Projects</a></li>
-                <li><a class="linkfix" href="index.html#skills" target="_self" data-section-pair="skills">Skills</a></li>
-                <li><a class="linkfix" href="index.html#contact" target="_self" data-section-pair="contact">Contact</a></li>
+                <li><a class="linkfix" href="index.html" target="_self" data-section-pair="cover">Home</a></li>
+                <li><a class="linkfix" href="index.html#projects" target="_self"
+                        data-section-pair="projects">Projects</a></li>
+                <li><a class="linkfix" href="index.html#skills" target="_self" data-section-pair="skills">Skills</a>
+                </li>
+                <li><a class="linkfix" href="index.html#contact" target="_self" data-section-pair="contact">Contact</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -36,27 +41,44 @@
     <div class="section" id="cover">
 
         <div class="vertical-align">
-            <!-- initially hidden for no js compatibility-->
-            <span id="cover-page-item1" class="typewriter cover-intro" data-typewriter-text="var me = new Student("
-                data-typewriter-rate="65" data-typewriter-next-element="cover-page-item2" class="cover-intro"></span>
+
+            <span id="cover-page-item1" class="animation cover-intro" data-animation-type="typewriter"
+                data-typewriter-text="var me = new Student(" data-typewriter-rate="65"
+                data-animation-next-element="cover-page-item2" class="cover-intro"></span>
 
             <br>
 
-            <span id="cover-page-item2" class="typewriter cover-intro-large" data-typewriter-text="&quot;Mark Ng&quot;,"
-                data-typewriter-head="false" data-typewriter-rate="65"
-                data-typewriter-next-element="cover-page-item3"></span>
+            <span id="cover-page-item2" class="animation cover-intro-large" data-animation-type="typewriter"
+                data-typewriter-text="&quot;Mark Ng&quot;," data-animation-head="false" data-typewriter-rate="65"
+                data-animation-next-element="cover-page-item3"></span>
 
             <br>
 
-            <span id="cover-page-item3" class="typewriter cover-intro-large" data-typewriter-text="&quot;Coder&quot;"
-                data-typewriter-head="false" data-typewriter-rate="65"
-                data-typewriter-next-element="cover-page-item4"></span>
+            <span id="cover-page-item3" class="animation cover-intro-large" data-animation-type="typewriter"
+                data-typewriter-text="&quot;Coder&quot;" data-animation-head="false" data-typewriter-rate="65"
+                data-animation-next-element="cover-page-item4"></span>
 
             <br>
 
-            <span id="cover-page-item4" class="typewriter cover-intro" data-typewriter-text=");"
-                data-typewriter-head="false" data-typewriter-rate="65"></span>
+            <span id="cover-page-item4" data-animation-type="typewriter" class="animation cover-intro"
+                data-typewriter-text=");" data-animation-head="false" data-typewriter-rate="65"></span>
+
+            <br>
         </div>
+
+        <noscript>
+            <div class="vertical-align">
+
+                <span class="typewriter cover-intro"> var me = new Student(</span>
+                <br>
+                <span class="typewriter cover-intro-large">"Mark Ng",</span>
+                <br>
+                <span class="typewriter cover-intro-large">"Coder"</span>
+                <br>
+                <span class="typewriter cover-intro">);</span>
+                <br>
+            </div>
+        </noscript>
 
     </div>
 
@@ -64,7 +86,206 @@
 
     <!-- past projects -->
     <div class="section" id="projects">
+        <div class="inner-padding">
 
+            <span id="projects-title" class="large-monospace light-text animation" data-animation-type="typewriter"
+                data-typewriter-rate="50" data-typewriter-text="let projects = {" data-animation-playonscroll="true"
+                data-animation-scroll-leeway="150" data-animation-next-element="flylive"></span>
+
+            <!-- flylive -->
+            <a>
+                <div class="card-animation-wrapper animation fade-initial" id="flylive" data-animation-head="false"
+                    data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
+                    data-animation-next-element="flychrono">
+                    <div class="project-wrapper">
+                        <div class="card-inner-padding">
+                            <span class="small-monospace light-text">
+                                FlyLive
+                            </span>
+                            <p class="light-text">
+                                Made in: <b>March 2017</b>
+                                <br>
+                                At age: <b>13</b>
+                            </p>
+                            <p class="light-text">FlyLive was the only tool of its kind available publicly at the time.
+                                It allowed flight
+                                simulator livestreamers to extract data from the flight simulator and display it on
+                                their
+                                stream through the use of constantly-updating text files and OBS.</p>
+
+                            <img src="content/projects/flylive-1.jpg" alt="FlyLive Legacy Screenshot">
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- flychrono -->
+
+            <a>
+                <div class="card-animation-wrapper animation fade-initial" id="flychrono" data-animation-head="false"
+                    data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
+                    data-animation-next-element="flycentral">
+                    <div class="project-wrapper">
+                        <div class="card-inner-padding">
+                            <span class="small-monospace light-text">
+                                FlyChrono
+                            </span>
+                            <p class="light-text">
+                                Made in: <b>December 2017</b>
+                                <br>
+                                At age: <b>14</b>
+                            </p>
+                            <p class="light-text">FlyChrono was a time syncer for flight simulators. It would sync the
+                                simulator's time with the real-world time for extra realism. Other solutions existed but
+                                FlyChrono was the only free solution.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- flycentral -->
+
+            <a>
+                <div class="card-animation-wrapper animation fade-initial" id="flycentral" data-animation-head="false"
+                    data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
+                    data-animation-next-element="flylive-studio">
+                    <div class="project-wrapper">
+                        <div class="card-inner-padding">
+                            <span class="small-monospace light-text">
+                                FlyCentral
+                            </span>
+                            <p class="light-text">
+                                Made in: <b>Decemeber 2017</b>
+                                <br>
+                                At age: <b>14</b>
+                            </p>
+                            <p class="light-text">FlyCentral served as the hub for all of my software. You could install
+                                and manage all of my software from it.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- flylive studio -->
+
+            <a>
+                <div class="card-animation-wrapper animation fade-initial" id="flylive-studio"
+                    data-animation-head="false" data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0"
+                    data-fade-yoffset="-16" data-animation-next-element="word-of-the-day">
+                    <div class="project-wrapper">
+                        <div class="card-inner-padding">
+                            <span class="small-monospace light-text">
+                                FlyLive Studio
+                            </span>
+                            <p class="light-text">
+                                Made in: <b>December 2018</b>
+                                <br>
+                                At age: <b>15</b>
+                            </p>
+                            <p class="light-text">FlyLive Studio was both a breakthrough for my programming skill and
+                                the streaming community. It allowed people to have even richer overlays than before
+                                thanks to FlyLive Studio's built-in overlay editor. The nature of the overlay editor
+                                also provided much faster data update rates (up to 20 times a second, as opposed to once
+                                per second before). It also includes a chatbot built using the Twitch API.</p>
+
+                            <img src="content/projects/flylive-1.jpg" alt="FlyLive Legacy Screenshot">
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- word of the day -->
+
+            <a>
+                <div class="card-animation-wrapper animation fade-initial" id="word-of-the-day"
+                    data-animation-head="false" data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0"
+                    data-fade-yoffset="-16" data-animation-next-element="blog-system">
+                    <div class="project-wrapper">
+                        <div class="card-inner-padding">
+                            <span class="small-monospace light-text">
+                                Word Of the Day Widget
+                            </span>
+                            <p class="light-text">
+                                Made in: <b>March 2017</b>
+                                <br>
+                                At age: <b>13</b>
+                            </p>
+                            <p class="light-text">FlyLive was the only tool of its kind available publicly at the time.
+                                It allowed flight
+                                simulator livestreamers to extract data from the flight simulator and display it on
+                                their
+                                stream through the use of constantly-updating text files and OBS.</p>
+
+                            <img src="content/projects/flylive-1.jpg" alt="FlyLive Legacy Screenshot">
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- blog system -->
+
+            <a>
+                <div class="card-animation-wrapper animation fade-initial" id="blog-system" data-animation-head="false"
+                    data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
+                    data-animation-next-element="hssc-issia">
+                    <div class="project-wrapper">
+                        <div class="card-inner-padding">
+                            <span class="small-monospace light-text">
+                                FlyLive
+                            </span>
+                            <p class="light-text">
+                                Made in: <b>March 2017</b>
+                                <br>
+                                At age: <b>13</b>
+                            </p>
+                            <p class="light-text">FlyLive was the only tool of its kind available publicly at the time.
+                                It allowed flight
+                                simulator livestreamers to extract data from the flight simulator and display it on
+                                their
+                                stream through the use of constantly-updating text files and OBS.</p>
+
+                            <img src="content/projects/flylive-1.jpg" alt="FlyLive Legacy Screenshot">
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- hssc and issia website -->
+
+            <a>
+                <div class="card-animation-wrapper animation fade-initial" id="hssc-issia" data-animation-head="false"
+                    data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
+                    <div class="project-wrapper">
+                        <div class="card-inner-padding">
+                            <span class="small-monospace light-text">
+                                FlyLive
+                            </span>
+                            <p class="light-text">
+                                Made in: <b>March 2017</b>
+                                <br>
+                                At age: <b>13</b>
+                            </p>
+                            <p class="light-text">FlyLive was the only tool of its kind available publicly at the time.
+                                It allowed flight
+                                simulator livestreamers to extract data from the flight simulator and display it on
+                                their
+                                stream through the use of constantly-updating text files and OBS.</p>
+
+                            <img src="content/projects/flylive-1.jpg" alt="FlyLive Legacy Screenshot">
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
     </div>
 
     <!-- skills -->
@@ -85,7 +306,7 @@
     <!-- scripts -->
     <script src="scripts/global.js"></script>
     <script src="scripts/home.js"></script>
-    <script src="scripts/typewriter.js"></script>
+    <script src="scripts/animatein.js"></script>
 
     <script src="scripts/jquery-3.5.1.min.js"></script>
 </body>

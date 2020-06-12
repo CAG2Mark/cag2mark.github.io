@@ -1,10 +1,12 @@
+/* #region layout */
+
 #cover {
     height: 100vh;
 }
 
 #projects{
-    height: 80vh;
-    background: red;
+    height: auto;
+    background: #ff4545;
 }
 
 #skills {
@@ -12,21 +14,19 @@
 }
 
 #contact {
-    background: red;
+    background: var(--accent-color);
     height: 80vh;
 }
+
+/* #endregion */
+
+/* #region cover */
 
 #cover-page-item1 {
     margin-top: 128px;
 }
 
-#cover-page-item2, #cover-page-item3 {
-    margin-left: 6vw;
-    color: var(--accent-color);
-}
-
 .cover-intro {
-
     font-size: 70px;
     line-height: 80px;
 }
@@ -35,7 +35,32 @@
     font-weight: bold;
     font-size: 100px;
     line-height: 110px;
+
+    margin-left: 6vw;
+    color: var(--accent-color);
 }
+
+/* #endregion */
+
+/* #region projects */
+
+.project-wrapper {
+    margin-top: 16px;
+    width: 100%;
+    overflow: auto;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    opacity: inherit;
+}
+
+.project-wrapper img {
+    display: inline-block;
+    height: 256px;
+    margin: 0px 16px 0 0;
+}
+
+/* #endregion */
 
 @media (max-width: 1100px) {
 

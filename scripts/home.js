@@ -25,6 +25,10 @@ for (var i = 0; i < children.length; i++) {
     pairs[i] = array;
 }
 
+// handle initially
+handleScroll();
+
+// changes selected navbar item based on the scroll position
 function handleScroll() {
     for (var i = 0; i < pairs.length; i++) {
         let pair = pairs[i];
@@ -34,8 +38,6 @@ function handleScroll() {
 
         let lower = window.pageYOffset + pair[1].getBoundingClientRect().top - leeway;
         let upper = window.pageYOffset + pair[1].getBoundingClientRect().top + pair[1].getBoundingClientRect().height - leeway;
-
-        console.log(window.scrollY + ", " + lower + ", " + upper);
 
         if (lower <= window.scrollY && window.scrollY < upper) {
             pair[0].classList.add("navigation-selected");

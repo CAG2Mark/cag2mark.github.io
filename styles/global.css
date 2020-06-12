@@ -27,7 +27,25 @@ h4 {
 }
 
 .section {
-    padding: 0px calc(100vw - 85%);
+    padding: 0 calc(100vw - 85%);
+    overflow: auto;
+}
+
+.inner-padding {
+    margin: 60px 0;
+}
+
+.card-inner-padding {
+    margin: 16px 24px;
+    transition: margin 100ms ease;
+}
+
+.card-inner-padding:hover {
+    margin: 10px 18px 22px 30px;
+}
+
+.card-animation-wrapper {
+    overflow: auto;
 }
 
 .standard-width {
@@ -41,7 +59,26 @@ h4 {
 
 /* #endregion */
 
+/* #region text stlyes */
+
+.light-text {
+    color: white;
+}
+
+.large-monospace {
+    font-family: "Roboto Mono", 'Consolas', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.small-monospace {
+    font-family: "Roboto Mono", 'Consolas', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 32px;
+}
+
 /* #region navigation */
+
 .navigation {
     position: fixed;
     top: 0;
@@ -55,6 +92,7 @@ h4 {
 .navigation-background {
     background-color: rgba(255, 255, 255, 0.753);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .navigation-list {
@@ -71,13 +109,16 @@ h4 {
 
 
 .navigation-list li a {
+    font-family: "Roboto Mono", 'Consolas', 'Courier New', Courier, monospace;
+    font-weight: bold;
+
     float: left;
     font-size: 26px;
     margin: 0px 10px;
     color: #686868;
     position: relative;
 
-    transition: 150ms all;
+    transition: 150ms color;
 }
 
 .navigation-list li a:hover,
@@ -96,10 +137,11 @@ h4 {
     background-color: rgb(31, 31, 31);
     visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.25s cubic-bezier(.19,.78,.38,1);
+    transition: all 0.25s cubic-bezier(.19, .78, .38, 1);
 }
 
-.navigation-list li a:hover::before, .navigation-selected::before {
+.navigation-list li a:hover::before,
+.navigation-selected::before {
     visibility: visible !important;
     transform: scaleX(1) !important;
 }
@@ -123,10 +165,18 @@ h4 {
 
 @media (max-width: 800px) {
     .section {
-        padding: 0px calc(100vw - 98%);
+        padding: 0px calc(100vw - 95%);
     }
 
     .standard-width {
-        margin: 0px calc(100vw - 98%)
+        margin: 0px calc(100vw - 95%)
+    }
+}
+
+/* MOBILE */
+
+@Media (max-width: 600px) {
+    .large-monospace {
+        font-size: 8vw;
     }
 }
