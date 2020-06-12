@@ -3,6 +3,11 @@
 }
 
 /* #region Helper styles and defaults */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "acumin-pro", -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Arial, 'Helvetica Neue', sans-serif;
     font-size: 22px;
