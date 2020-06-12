@@ -115,9 +115,7 @@ function fade(element) {
         element.style.opacity = 1;
     }, 1);
 
-    setTimeout(() => {
-        animateNext(element);
-    }, time);
+    animateNext(element);
 
 
 }
