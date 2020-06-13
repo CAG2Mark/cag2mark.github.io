@@ -1,3 +1,6 @@
+// lock height
+
+document.getElementById("projects").style.minHeight = document.getElementById("projects").getBoundingClientRect().height;
 // pair nav pairs
 
 window.addEventListener('scroll', handleScroll);

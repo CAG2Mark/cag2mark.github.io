@@ -58,6 +58,7 @@
     display: inline-block;
     height: 256px;
     margin: 0px 16px 0 0;
+    max-width: 100%;
 }
 
 /* #endregion */

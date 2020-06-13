@@ -75,7 +75,8 @@ h4 {
     color: white;
     transition: 200ms color, 200ms background-color;
     padding: 8px;
-    cursor: pointer;;
+    cursor: pointer;
+    ;
 }
 
 .light-button:hover {
@@ -100,7 +101,52 @@ h4 {
     font-weight: bold;
     font-size: 32px;
 }
+
 /* #endregion */
+
+/* mobile nav bar */
+
+#hamburger-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin: 16px 0 0 -8px;
+
+    vertical-align: middle;
+}
+
+.hamburger-line {
+    background-color: #000000;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    transform-origin: top left;
+
+    transition: top 200ms ease, bottom 200ms ease, transform 200ms ease;
+}
+
+.hamburger-line-top {
+    top: 25%;
+}
+
+.hamburger-line-bottom {
+    bottom: 25%;
+}
+
+
+.hamburger-line-top-active {
+    transform: rotate(45deg);
+    top: 12.5%;
+    left: 1px;
+}
+
+.hamburger-line-bottom-active {
+    transform: rotate(-45deg);
+    bottom: 12.5%;
+    left: 0px;
+}
+
 
 /* #region navigation */
 
@@ -112,6 +158,8 @@ h4 {
     height: 60px;
 
     z-index: 999;
+
+    transition: 200ms height ease;
 }
 
 .navigation-background {
@@ -122,8 +170,13 @@ h4 {
 
 .navigation-list {
     list-style-type: none;
-    margin: 10px 0 0 0;
+    margin: 12px 0;
     padding: 0;
+    display: inline-block;
+
+    max-width: calc(100% - 60px);
+
+    vertical-align: top;
 }
 
 .navigation-list li {
@@ -139,11 +192,11 @@ h4 {
 
     float: left;
     font-size: 26px;
-    margin: 0px 10px;
-    color: #686868;
+    margin: 0px 12px;
+    color: #00000075;
     position: relative;
 
-    transition: 150ms color;
+    transition: color 150ms, opacity 200ms ease;
 }
 
 .navigation-list li a:hover,
@@ -200,8 +253,47 @@ h4 {
 
 /* MOBILE */
 
-@Media (max-width: 600px) {
+@media (min-width: 601px) {
+    .mobileonly {
+        display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+
     .large-monospace {
         font-size: 8vw;
+    }
+
+    /* hide underline */
+    .navigation-list li a::before {
+        display: none;
+    }
+
+    :not(.navigation-selected).navigation-list li a {
+        height: 0;
+        opacity: 0;
+    }
+
+    .navigation-item-peek {
+        height: auto !important;
+        opacity: 1 !important;
+    }
+
+    .navigation-selected {
+        height: 0;
+        opacity: 1 !important;
+    }
+
+    .navigation-list li {
+        float: none;
+    }
+
+    .navigation-list li a:hover {
+        color: #00000075;
+    }
+
+    .navigation-open {
+        height: auto;
     }
 }

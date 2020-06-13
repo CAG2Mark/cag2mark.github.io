@@ -101,18 +101,15 @@ function fade(element) {
     let xoffset = parseInt(element.getAttribute("data-fade-xoffset"));
     let yoffset = parseInt(element.getAttribute("data-fade-yoffset"));
 
-    element.style.marginLeft = -xoffset + "px";
-    element.style.marginTop = -yoffset + "px";
+    element.style.transform = `translate(${xoffset}px, ${yoffset}px)`;
     element.style.opacity = 0;
 
     element.classList.remove("fade-initial");
 
-    element.style.transition = `margin-left ${time}ms ease, margin-top ${time}ms ease, opacity ${time}ms ease`;
-
     setTimeout(() => {
-        //element.style.marginLeft = 0;
-        //element.style.marginTop = 0;
         element.style.opacity = 1;
+        element.style.transform = "translate(0px, 0px)";
+        element.style.transition = `transform ${time}ms ease, opacity ${time}ms ease`;
     }, 1);
 
     animateNext(element);

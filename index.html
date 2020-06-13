@@ -23,8 +23,14 @@
 
     <!-- top navigation -->
 
-    <div class="navigation navigation-background">
+    <div class="navigation navigation-background" id="navbar">
         <div class="standard-width">
+
+            <div id="hamburger-wrapper" class="mobileonly">
+                <div class="hamburger-line hamburger-line-top" id="hamburger-line-top"></div>
+                <div class="hamburger-line hamburger-line-bottom" id="hamburger-line-bottom"></div>
+            </div>
+
             <ul class="navigation-list" id="navigation-list">
                 <li><a class="linkfix" href="index.html#cover" target="_self" data-section-pair="cover">Home</a></li>
                 <li><a class="linkfix" href="index.html#projects" target="_self"
@@ -194,7 +200,8 @@
                                 thanks to FlyLive Studio's built-in overlay editor. The nature of the overlay editor
                                 also provided much faster data update rates (up to 20 times a second, as opposed to once
                                 per second before). It also includes a chatbot built using the Twitch API. This software
-                                has helped streamers with over 30K followers build their brand and ultimately their lives.
+                                has helped streamers with over 30K followers build their brand and ultimately their
+                                lives.
                             </p>
 
                             <img src="content/projects/flylive-studio-1.jpg" alt="Flylive studio Screenshot">
@@ -220,7 +227,9 @@
                                 <br>
                                 At age: <b>16</b>
                             </p>
-                            <p class="light-text">In many ways, this widget was my introduction to web-app design. The
+                            <p class="light-text">A student organisation approached me, asking me to make a "word of the
+                                day" widget for them. In many ways, this widget was my introduction to web-app design.
+                                The
                                 widget would draw data from a Google Sheet using the Google API to display a "word of
                                 the day" on the client-side. This was my first time working with cloud hosting.</p>
 
@@ -289,11 +298,15 @@
                 </div>
             </a>
 
+            <br>
+
             <!-- spacer -->
             <div style="height: 32px"></div>
 
             <span id="projects-end" class="large-monospace light-text animation" data-animation-type="typewriter"
                 data-typewriter-rate="50" data-typewriter-text="};" data-animation-head="false"></span>
+
+            <br>
 
         </div>
     </div>
