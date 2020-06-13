@@ -36,6 +36,7 @@ function hamburgerClicked() {
 }
 
 function hamburgerClose() {
+    if (!hamburgerOpen) return;
     hamburgerOpen = false;
     handleHamburgerChange();
 }

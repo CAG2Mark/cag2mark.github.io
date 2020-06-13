@@ -209,6 +209,7 @@ h4 {
 
 .navigation-list li a:hover,
 .navigation-selected {
+    z-index: 5;
     color: #181818 !important;
 }
 
@@ -283,16 +284,19 @@ h4 {
     }
 
     :not(.navigation-selected).navigation-list li a {
+        pointer-events: none;
         height: 0;
         opacity: 0;
     }
 
     .navigation-item-peek {
+        pointer-events: auto !important;
         height: auto !important;
         opacity: 1 !important;
     }
 
     .navigation-selected {
+        pointer-events: auto !important;
         height: 0;
         opacity: 1 !important;
     }
