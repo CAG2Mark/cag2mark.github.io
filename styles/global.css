@@ -197,7 +197,9 @@ h4 {
     position: relative;
 
     transition: color 150ms, opacity 200ms ease;
+}
 
+.noselect {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -262,13 +264,13 @@ h4 {
 
 /* MOBILE */
 
-@media (min-width: 601px) {
+@media (min-width: 801px) {
     .mobileonly {
         display: none !important;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     body {
         font-size: 20px;
