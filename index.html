@@ -17,6 +17,20 @@
     <!-- PAGE SPECIFIC CSS -->
     <link rel="stylesheet" href="styles/home.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104955516-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-104955516-2');
+    </script>
+
+
 </head>
 
 <body>
@@ -32,12 +46,15 @@
             </div>
 
             <ul class="navigation-list noselect" id="navigation-list">
-                <li><a class="linkfix noselect" href="index.html#cover" target="_self" data-section-pair="cover">Home</a></li>
+                <li><a class="linkfix noselect" href="index.html#cover" target="_self"
+                        data-section-pair="cover">Home</a></li>
                 <li><a class="linkfix noselect" href="index.html#projects" target="_self"
                         data-section-pair="projects">Projects</a></li>
-                <li><a class="linkfix noselect" href="index.html#skills" target="_self" data-section-pair="skills">Skills</a>
+                <li><a class="linkfix noselect" href="index.html#skills" target="_self"
+                        data-section-pair="skills">Skills</a>
                 </li>
-                <li><a class="linkfix noselect" href="index.html#contact" target="_self" data-section-pair="contact">Contact</a>
+                <li><a class="linkfix noselect" href="index.html#contact" target="_self"
+                        data-section-pair="contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -91,8 +108,23 @@
 
 
     <!-- past projects -->
-    <div class="section" id="projects">
+    <div class="section light-text" id="projects">
         <div class="inner-padding">
+
+            <noscript>
+                <span class="large-monospace">Uh oh! I need JavaScript</span>
+                <p>You need to enable JavaScript to view my portfolio.</p>
+
+                <p><strong>Chrome, Edge, Opera:</strong></p>
+                <ol>
+                    <li>Navigate to <a href="chrome://settings/">chrome://settings/</a>.</li>
+                    <li>Search for "JavaScript".</li>
+                    <li>Under "Site Settings"/"Site Permissions", click on "JavaScript".</li>
+                    <li>Change it to "Allow".</li>
+                </ol>
+                <p><strong>Firefox:</strong></p>
+                <p>Uninstall any extension that may disable JavaScript in your browser.</p>
+            </noscript>
 
             <span id="projects-title" class="large-monospace light-text animation" data-animation-type="typewriter"
                 data-typewriter-rate="50" data-typewriter-text="let projects = {" data-animation-playonscroll="true"

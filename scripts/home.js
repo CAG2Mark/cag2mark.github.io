@@ -37,7 +37,7 @@ function handleScroll() {
         let pair = pairs[i];
 
         // add some leeway
-        let leeway = 50;
+        let leeway = 200;
 
         let lower = window.pageYOffset + pair[1].getBoundingClientRect().top - leeway;
         let upper = window.pageYOffset + pair[1].getBoundingClientRect().top + pair[1].getBoundingClientRect().height - leeway;
