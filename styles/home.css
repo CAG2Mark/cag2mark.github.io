@@ -10,7 +10,7 @@
 }
 
 #skills {
-    height: 80vh;
+    height: auto;
 }
 
 #contact {
@@ -44,7 +44,7 @@
 
 /* #region projects */
 
-.project-wrapper {
+.card-wrapper {
     margin-top: 16px;
     width: 100%;
     overflow: auto;
@@ -54,7 +54,7 @@
     opacity: inherit;
 }
 
-.project-wrapper img {
+.card-wrapper img {
     display: inline-block;
     max-height: 256px;
     margin: 0px 16px 0 0;
