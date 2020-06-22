@@ -59,13 +59,13 @@ function handleHamburgerChange() {
         } else {
 
             // special case - lock height till hidden
-            item.setAttribute("style", "height: auto !important")
+            //item.setAttribute("style", "height: auto !important")
             item.classList.remove("navigation-item-peek");
 
             setTimeout(() => {
                 item.removeAttribute("style");
                 document.getElementById("navbar").classList.remove("navigation-open");
-            }, 200);
+            }, 100);
         }
     }
 }

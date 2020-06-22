@@ -127,7 +127,7 @@ h4 {
     position: absolute;
     transform-origin: top left;
 
-    transition: top 200ms ease, bottom 200ms ease, transform 200ms ease;
+    transition: top 300ms ease, bottom 300ms ease, transform 300ms ease;
 }
 
 .hamburger-line-top {
@@ -163,7 +163,7 @@ h4 {
 
     z-index: 999;
 
-    transition: 200ms height ease;
+    transition: 400ms height cubic-bezier(.3,0,.3,1);
 }
 
 .navigation-background {
@@ -200,7 +200,7 @@ h4 {
     color: #00000075;
     position: relative;
 
-    transition: color 150ms, opacity 200ms ease;
+    transition: color 150ms, opacity 400ms ease, height 350ms cubic-bezier(.3,0,.3,1);
 }
 
 .noselect {
@@ -230,7 +230,7 @@ h4 {
     background-color: rgb(31, 31, 31);
     visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.25s cubic-bezier(.19, .78, .38, 1);
+    transition: all 250ms cubic-bezier(.19, .78, .38, 1);
 }
 
 .navigation-list li a:hover::before,
@@ -293,11 +293,12 @@ h4 {
         pointer-events: none;
         height: 0;
         opacity: 0;
+        
     }
 
     .navigation-item-peek {
         pointer-events: auto !important;
-        height: auto !important;
+        height: 40px !important;
         opacity: 1 !important;
     }
 
