@@ -57,15 +57,11 @@ function handleHamburgerChange() {
             item.classList.add("navigation-item-peek");
             document.getElementById("navbar").classList.add("navigation-open");
         } else {
-
-            // special case - lock height till hidden
-            //item.setAttribute("style", "height: auto !important")
-            item.classList.remove("navigation-item-peek");
+            document.getElementById("navbar").classList.remove("navigation-open");
 
             setTimeout(() => {
-                item.removeAttribute("style");
-                document.getElementById("navbar").classList.remove("navigation-open");
-            }, 100);
+                item.classList.remove("navigation-item-peek");
+            }, 80);
         }
     }
 }
