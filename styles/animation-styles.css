@@ -1,3 +1,7 @@
 .fade-initial {
     opacity: 0;
 }
+
+.scale-initial {
+    transform: scale(0, 0);
+}

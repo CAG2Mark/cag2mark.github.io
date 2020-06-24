@@ -62,9 +62,10 @@ function animate(element) {
 
     if (animType == "typewriter") {
         typeWriter(0, element);
-    }
-    else if (animType == "fade") {
+    } else if (animType == "fade") {
         fade(element);
+    } else if (animType == "scale") {
+        scale(element);
     }
 }
 
@@ -114,6 +115,24 @@ function fade(element) {
 
     animateNext(element);
 
+}
+
+function scale(element) {
+
+    let time = parseInt(element.getAttribute("data-scale-time"));
+
+    element.style.transform = `scale(0, 0)`;
+    element.style.opacity = 0;
+
+    element.classList.remove("scale-initial");
+
+    setTimeout(() => {
+        element.style.opacity = 1;
+        element.style.transform = "scale(1, 1)";
+        element.style.transition = `transform ${time}ms ease, opacity ${time}ms ease`;
+    }, 1);
+
+    animateNext(element);
 
 }
 
