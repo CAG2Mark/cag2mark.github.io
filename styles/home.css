@@ -22,6 +22,10 @@
 
 /* #region cover */
 
+#name-container {
+    z-index: 3;
+}
+
 #cover-page-item1 {
     margin-top: 128px;
 }
@@ -38,6 +42,97 @@
 
     margin-left: 6vw;
     color: var(--accent-color);
+}
+
+/* #endregion */
+
+/* #region svg */
+
+#emblem-container {
+    max-width: 90vw;
+    max-height: 90vw;
+    width: 600px;
+    height: 600px;
+    z-index: 1;
+
+    right: 5vw;
+
+    overflow: visible;
+}
+
+#mn-svg {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+
+    overflow: visible;
+}
+
+#mn-svg path {
+    fill: #f1f1f1;
+    transition: transform 200ms ease-in-out, opacity 500ms, fill 200ms;
+}
+
+
+#emblem-container:hover #emblemM {
+    transform: translate(-1%, -2.5%);
+    fill: #f85757;
+}
+
+#emblem-container:hover #emblemMid {
+    fill: #f87d57;
+}
+
+
+#emblem-container:hover #emblemN {
+    transform: translate(1%, 2.5%);
+    fill: #f8c057;
+}
+
+#emblemM {
+    animation-name: M-in;
+    animation-duration: 0.5s;
+}
+
+#emblemMid {
+    animation-name: Mid-in;
+    animation-duration: 0.5s;
+}
+
+#emblemN {
+    animation-name: N-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes M-in {
+    from {
+        transform: translate(7.9%, 19%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes Mid-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes N-in {
+    from {
+        transform: translate(-7.9%, -19%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
 }
 
 /* #endregion */
