@@ -113,7 +113,9 @@ function fade(element) {
         element.style.transition = `transform ${time}ms ease, opacity ${time}ms ease`;
     }, 1);
 
-    animateNext(element);
+    setTimeout(() => {
+        animateNext(element);
+    }, time);
 
 }
 

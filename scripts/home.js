@@ -50,3 +50,15 @@ function handleScroll() {
         }
     }
 }
+
+// Email
+
+// Done this way to prevent spambots
+let username = "markng989";
+let domain = "gmail.com";
+
+let email = username + "@" + domain;
+
+let lnk = document.getElementById("email-text");
+lnk.setAttribute("href", "mailto:" + email);
+lnk.innerHTML = email;

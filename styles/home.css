@@ -4,9 +4,15 @@
     height: 100vh;
 }
 
-#projects{
+#about {
     height: auto;
     background: #ff4545;
+    text-align: center;
+}
+
+#projects {
+    height: auto;
+    background: #ff6262;
 }
 
 #skills {
@@ -14,13 +20,57 @@
 }
 
 #contact {
-    background: var(--accent-color);
-    height: 80vh;
+    background: #ffffff;
+    height: auto;
+    text-align: center;
 }
 
 /* #endregion */
 
 /* #region cover */
+
+/* #region about */
+
+#interests-column {
+    text-align: center;
+    vertical-align: top;
+    display: table;
+    height: 420px;
+}
+
+#interests-column > div {
+    display: table-cell;
+    height: 100%;
+    width: 50%;
+}
+
+#interests-column > div > div {
+    height: 100%;
+    min-height: 16px;
+    background: rgba(240, 240, 240, 0.9);
+    color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 6px 10px 28px -15px rgba(0, 0, 0, 0.5);
+
+    margin: 16px;
+    padding: 4px 12px;
+
+    transition: 200ms ease transform, 200ms box-shadow;
+}
+
+#interests-column > div > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 6px 10px 61px -15px rgba(0,0,0,0.7);
+}
+
+#interests-column div hr {
+    margin: 12px;
+    height: 2px;
+    border-width: 0;
+    color: rgb(184, 184, 184);
+    background-color: rgb(184, 184, 184);
+}
+/* #endregion */
 
 #name-container {
     z-index: 3;
@@ -109,6 +159,7 @@
         transform: translate(7.9%, 19%);
         opacity: 0;
     }
+
     to {
         transform: translate(0, 0);
         opacity: 1;
@@ -119,6 +170,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -129,6 +181,7 @@
         transform: translate(-7.9%, -19%);
         opacity: 0;
     }
+
     to {
         transform: translate(0, 0);
         opacity: 1;
@@ -165,7 +218,7 @@
         font-size: 50px;
         line-height: 60px;
     }
-    
+
     .cover-intro-large {
         font-size: 80px;
         line-height: 90px;
@@ -173,17 +226,54 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     .cover-intro {
 
         font-size: 8vw;
         line-height: 8.5vw;
     }
-    
+
     .cover-intro-large {
         font-size: 14.5vw;
         line-height: 15vw;
     }
 
+    #interests-column {
+        display: block;
+        height: auto;
+    }
+    
+    #interests-column > div {
+        display: block;
+        height: auto;
+        width: 100%;
+    
+    }
+    
+    #interests-column > div > div {    
+        margin: 16px;
+        padding: 4px 12px;
+    }
 }
+
+/* #region contact */
+
+#email-container {
+    border-radius: 16px;
+    background-color: #ececec;
+    font-weight: bold;
+    width: 250px;
+    font-size: 16px;
+    line-height: 32px;
+    overflow: auto; 
+
+    margin: 0 auto;
+}
+
+#email-container * {
+    text-decoration: none;
+    color: black;
+}
+
+/* #endregion */

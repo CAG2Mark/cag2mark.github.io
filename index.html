@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- And *So* begins a friendly arms race. -->
-<!-- I don't know you and you don't know me. -->
-<!-- Yet I know you so well, and you know me so well. -->
-<!-- Bring it on. -->
-
 <head>
 
 
@@ -34,9 +29,7 @@
     <link rel="stylesheet" href="styles/animation-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="icon" 
-      type="image/png" 
-      href="content/icons/favicon.ico">
+    <link rel="icon" type="image/png" href="content/icons/favicon.ico">
 
     <!-- PAGE SPECIFIC CSS -->
     <link rel="stylesheet" href="styles/home.css">
@@ -57,15 +50,11 @@
             </div>
 
             <ul class="navigation-list noselect" id="navigation-list">
-                <li><a class="linkfix noselect" href="index.html#cover" target="_self"
-                        data-section-pair="cover">Home</a></li>
-                <li><a class="linkfix noselect" href="index.html#projects" target="_self"
+                <li><a class="linkfix noselect" href="#cover" target="_self" data-section-pair="cover">Home</a></li>
+                <li><a class="linkfix noselect" href="#about" target="_self" data-section-pair="about">About</a></li>
+                <li><a class="linkfix noselect" href="#projects" target="_self"
                         data-section-pair="projects">Projects</a></li>
-                <li><a class="linkfix noselect" href="index.html#skills" target="_self"
-                        data-section-pair="skills">Skills</a>
-                </li>
-                <li><a class="linkfix noselect" href="index.html#contact" target="_self"
-                        data-section-pair="contact">Contact</a>
+                <li><a class="linkfix noselect" href="#contact" target="_self" data-section-pair="contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -101,8 +90,8 @@
         </div>
 
         <div class="vertical-align" id="emblem-container">
-            <svg id="mn-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 512 512"
-                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+            <svg id="mn-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
                 <path id="emblemM"
                     d="M32 463v-40-94-113-98-32-15-1l-19 8 66 69 106 109 24 25c7 7 19 2 19-8v-68V95 70l-19 8 67 69 105 109 24 25c10 10 26-6 16-16l-66-69L249 87l-24-25c-7-7-19-2-19 8v203l19-8-66-68L53 87 29 62c-7-7-19-2-19 8v393c0 15 22 15 22 0z" />
                 <path id="emblemMid"
@@ -127,6 +116,59 @@
             </div>
         </noscript>
 
+    </div>
+
+    <div class="section light-text" id="about">
+        <div class="width-wrapper">
+            <h1 class="animation" data-animation-type="typewriter" data-typewriter-rate="50"
+                data-typewriter-text="Empowering us all." data-animation-playonscroll="true"
+                data-animation-scroll-leeway="100" data-animation-next-element="about1"></h1>
+            <div id="about1" class="animation fade-initial" data-animation-head="false" data-animation-type="fade"
+                data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16" data-animation-next-element="about2">
+                <strong>Hello
+                    world; I'm Mark!</strong></div>
+            <div id="about2" class="animation fade-initial" data-animation-head="false" data-animation-type="fade"
+                data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16" data-animation-next-element="about3">
+                Since starting programming when I
+                was 10, I have created web and software solutions for various organisations while still studying for
+                high school. I also devote lots of time to my own personal
+                projects, of which are free for anyone to use and have empowered individuals and generated careers and
+                created brands.</div>
+
+            <br>
+
+            <div id="about3" class="animation fade-initial" data-animation-head="false" data-animation-type="fade"
+                data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
+                data-animation-next-element="interests-column">I am currently a high school student in Hong Kong
+                studying for the IB Diploma.</div>
+
+            <br>
+
+            <div id="interests-column" class="animation fade-initial" data-animation-head="false"
+                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
+                <div>
+                    <div>
+                        <h3>Experience</h3>
+                        <hr>
+                        <p>I am fluent in web design and several programming languages, such as C#, Java, Python,
+                            JavaScript, TypeScript and more.</p>
+                        <p>User experience is something I have a profound interest in - I tend to focus not only on
+                            the visual appeal, but also the ease of use.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Interests</h3>
+                        <hr>
+                        <p>Being a self-proclaimed nerd, I am hugely interested in maths and physics, and often apply my
+                            programming to solve problems in these areas of science.</p>
+                        <p>In addition to this, I am also hugely interested in aviation, hence why many of my projects
+                            are
+                            software pertaining to flight simulators.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -169,9 +211,12 @@
                             <br>
                             At age: <b>13</b>
                         </p>
-                        <p class="light-text">FlyLive was the only tool of its kind available publicly at the time. It
-                            allows flight simulator livestreamers to extract data from the flight simulator and display
-                            it on their stream through the use of constantly-updating text files and OBS. This software
+                        <p class="light-text">FlyLive was the only tool of its kind available publicly at the
+                            time. It
+                            allows flight simulator livestreamers to extract data from the flight simulator and
+                            display
+                            it on their stream through the use of constantly-updating text files and OBS. This
+                            software
                             is still used by streamers to this day.</p>
 
                         <img src="content/projects/flylive-1.jpg" alt="FlyLive Legacy Screenshot">
@@ -224,7 +269,8 @@
                             <br>
                             At age: <b>14</b>
                         </p>
-                        <p class="light-text">FlyCentral serves as the hub for all of my software. One can install
+                        <p class="light-text">FlyCentral serves as the hub for all of my software. One can
+                            install
                             and manage all of my software from it.</p>
 
 
@@ -249,11 +295,14 @@
                             <br>
                             At age: <b>15</b>
                         </p>
-                        <p class="light-text">FlyLive Studio was both a breakthrough for my programming skill and
+                        <p class="light-text">FlyLive Studio was both a breakthrough for my programming skill
+                            and
                             the streaming community. It allows people to have even richer overlays than before
                             thanks to FlyLive Studio's built-in overlay editor. The nature of the overlay editor
-                            also provided much faster data update rates (up to 20 times a second, as opposed to once
-                            per second before). It also includes a chatbot built using the Twitch API. This software
+                            also provided much faster data update rates (up to 20 times a second, as opposed to
+                            once
+                            per second before). It also includes a chatbot built using the Twitch API. This
+                            software
                             has helped streamers with over 30K followers build their brand and ultimately their
                             lives.
                         </p>
@@ -281,9 +330,12 @@
                             <br>
                             At age: <b>16</b>
                         </p>
-                        <p class="light-text">A student organisation approached me, asking me to make a "word of the
-                            day" widget for them. In many ways, this widget was my introduction to web-app design.
-                            The widget would draw data from a Google Sheet using the Google API to display a "word of
+                        <p class="light-text">A student organisation approached me, asking me to make a "word of
+                            the
+                            day" widget for them. In many ways, this widget was my introduction to web-app
+                            design.
+                            The widget would draw data from a Google Sheet using the Google API to display a
+                            "word of
                             the day" on the client-side. This was my first time working with cloud hosting.</p>
 
                         <img src="content/projects/word-of-the-day-1.jpg" alt="Word of the day widget Screenshot">
@@ -310,8 +362,10 @@
                             At age: <b>16</b>
                         </p>
                         <p class="light-text">A student organisation in my school required a website which would
-                            allow them to post their articles online. They approached me and asked me to make a blog
-                            system. The making of this system extended my already strong app-design skills and was
+                            allow them to post their articles online. They approached me and asked me to make a
+                            blog
+                            system. The making of this system extended my already strong app-design skills and
+                            was
                             my first time designing a native desktop app for a specific client.</p>
 
                         <img src="content/projects/blog-system-1.jpg" alt="Blog System Screenshot">
@@ -337,8 +391,10 @@
                             <br>
                             At age: <b>16</b>
                         </p>
-                        <p class="light-text">Using my now complete blog system, I designed websites for the HSSC
-                            and the ISSIA (two student organisations, one of which is international). This greatly
+                        <p class="light-text">Using my now complete blog system, I designed websites for the
+                            HSSC
+                            and the ISSIA (two student organisations, one of which is international). This
+                            greatly
                             strengthened my previously loose web design skills.</p>
 
 
@@ -364,29 +420,25 @@
         </div>
     </div>
 
-    <!-- skills -->
-    <div class="section" id="skills">
-
-        <div class="inner-padding">
-
-            <span id="skills-title" class="large-monospace animation" data-animation-type="typewriter"
-                data-typewriter-rate="50" data-typewriter-text="let skills = {" data-animation-playonscroll="true"
-                data-animation-scroll-leeway="150"></span>
-
-            <!-- Skills wrapper -->
-            <div class="children-inline"></div>
-
-        </div>
-
-    </div>
 
     <!-- get in touch -->
     <div class="section" id="contact">
+
+        <div class="width-wrapper">
+            <h1>Get in touch</h1>
+
+            <p>Ask me anything about my journey, skills or potential project ideas!</p>
+
+            <div id="email-container">
+                <a id="email-text">JavaScript required</a>
+            </div>
+        </div>
 
     </div>
 
     <!-- footer -->
     <div class="section" id="footer">
+
 
     </div>
 
