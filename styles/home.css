@@ -8,6 +8,10 @@
     height: auto;
     background: #ff4545;
     text-align: center;
+
+    padding-bottom: 50px;
+
+    overflow: hidden;
 }
 
 #projects {
@@ -31,12 +35,79 @@
 
 /* #region about */
 
+#about-wrapper {
+    margin-bottom: 10px;
+}
+
 #interests-column {
     text-align: center;
     vertical-align: top;
     display: table;
     height: 420px;
 }
+
+#languages-container {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    overflow-x: visible;
+
+    height: 116px;
+}
+
+
+#languages-container > div {
+    vertical-align: top;
+
+    text-align: center;
+
+    display: inline-block;
+    background: rgba(240, 240, 240, 0.9);
+    color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.41);
+    margin: 4px;
+    padding: 8px 14px;
+
+    max-height: 34px;
+
+    width: 64px;
+
+    line-height: 36px;
+
+    overflow: hidden;
+
+    transition: 200ms ease max-height, 200ms ease width, 200ms box-shadow, 200ms opacity;
+}
+
+#languages-container > div:hover {
+    max-height: 72px;
+    width: 330px !important;
+}
+
+/* Languages container below min size */
+
+@media (max-width: 1100px) {
+    #languages-container > br {
+        display: none;
+    }
+
+    #languages-container > div {
+        margin: 4px 0;
+        display: block;
+        width: calc(100% - 28px) !important;
+    }
+
+    #languages-container > div:hover  {
+        width: calc(100% - 28px) !important;
+    }
+
+    #languages-container {
+        height: auto;
+    }
+
+}
+
 
 #interests-column > div {
     display: table-cell;

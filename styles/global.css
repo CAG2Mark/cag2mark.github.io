@@ -41,7 +41,7 @@ h4 {
 }
 
 .width-wrapper {
-    margin: 60px auto;
+    margin: 60px auto 30px auto;
     max-width: 850px;
 
 }
@@ -117,7 +117,7 @@ h4 {
 /* mobile nav bar */
 
 #hamburger-wrapper {
-    display: inline-block;
+    display: none;
     position: relative;
     width: 24px;
     height: 24px;
@@ -275,6 +275,10 @@ h4 {
 /* NAVBAR MAX WIDTH */
 
 @media (max-width: 1000px) {
+
+    #hamburger-wrapper {
+        display: inline-block;
+    }
 
     /* hide underline */
     .navigation-list li a::before {

@@ -44,7 +44,7 @@
     <div class="navigation navigation-background noselect" id="navbar">
         <div class="standard-width noselect">
 
-            <div id="hamburger-wrapper" class="mobileonly">
+            <div id="hamburger-wrapper">
                 <div class="hamburger-line hamburger-line-top" id="hamburger-line-top"></div>
                 <div class="hamburger-line hamburger-line-bottom" id="hamburger-line-bottom"></div>
             </div>
@@ -119,7 +119,7 @@
     </div>
 
     <div class="section light-text" id="about">
-        <div class="width-wrapper">
+        <div class="width-wrapper" id="about-wrapper">
             <h1 class="animation" data-animation-type="typewriter" data-typewriter-rate="50"
                 data-typewriter-text="Empowering us all." data-animation-playonscroll="true"
                 data-animation-scroll-leeway="100" data-animation-next-element="about1"></h1>
@@ -145,7 +145,8 @@
             <br>
 
             <div id="interests-column" class="animation fade-initial" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
+                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
+                data-animation-next-element="languages-title">
                 <div>
                     <div>
                         <h3>Experience</h3>
@@ -167,6 +168,73 @@
                             software pertaining to flight simulators.</p>
                     </div>
                 </div>
+            </div>
+
+            <div style="height: 16px"></div>
+
+            <h1 id="languages-title" class="animation" data-animation-head="false" data-animation-type="typewriter"
+                data-typewriter-rate="30" data-typewriter-text="Languages I've worked in." data-animation-next-element="languages-container">	&nbsp;</h1>
+
+
+        </div>
+
+        <div id="languages-container" class="animation fade-initial" data-animation-head="false" data-animation-type="fade"
+            data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
+            <div style="width: 80px">
+                <span><strong>English</strong></span>
+                <br>
+                <span>Hello world!</span>
+            </div>
+            <div style="width: 82px">
+                <span><strong>Chinese</strong></span>
+                <br>
+                <span>你好世界!</span>
+            </div>
+            <div>
+                <span><strong>HTML</strong></span>
+                <br>
+                <span>&lt;p&gt;Hello world!&lt;/p&gt;</span>
+            </div>
+            <div style="width: 46px">
+                <span><strong>CSS</strong></span>
+                <br>
+                <span>p::after { content: 'Hello world!'; }</span>
+            </div>
+            <div style="width: 25px">
+                <span><strong>JS</strong></span>
+                <br>
+                <span>console.log("spillMySecret();");</span>
+            </div>
+            <br>
+            <div style="width: 84px">
+                <span><strong>Node.JS</strong></span>
+                <br>
+                <span>res.end("Hello world!")</span>
+            </div>
+            <div style="width: 28px">
+                <span><strong>C#</strong></span>
+                <br>
+                <span>Console.WriteLine("Hello world!");</span>
+            </div>
+            <div style="width: 46px">
+                <span><strong>Java</strong></span>
+                <br>
+                <span>System.out.println("Hello world!");</span>
+            </div>
+            <div style="width: 74px">
+                <span><strong>Python</strong></span>
+                <br>
+                <span>print("Hello world!")</span>
+            </div>
+            <div style="width: 48px">
+                <span><strong>C++</strong></span>
+                <br>
+                <span>std::cout &lt;&lt; "Hello world!";</span>
+            </div>
+            <div style="opacity: 0; width: 0; display: none" id="invis-thing-hehe">
+                <span><strong>mcfunction</strong></span>
+                <br>
+                <span>tellraw @a {"text":"Hello world!"}</span>
             </div>
         </div>
     </div>

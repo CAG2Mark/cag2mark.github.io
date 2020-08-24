@@ -44,11 +44,20 @@ function handleScroll() {
 
         if (lower <= window.scrollY && window.scrollY < upper) {
             pair[0].classList.add("navigation-selected");
-        }
-        else {
+        } else {
             pair[0].classList.remove("navigation-selected");
         }
     }
+}
+
+// Hey, if you're looking at this, then you are a cheater and you don't deserve my secrets.
+function spillMySecret() {
+    document.getElementById("languages-title").innerHTML = "Languages (secret edition)"
+    var secret = document.getElementById("invis-thing-hehe");
+    secret.style.display = "inline-block";
+    secret.style.width = "130px";
+    secret.style.opacity = "1";
+    console.log("Congratulations! You found an easter egg! Keep looking for more!");
 }
 
 // Email
