@@ -16,7 +16,9 @@
 
 #projects {
     height: auto;
-    background: #ff6262;
+    background: #ffffff;
+
+    text-align:center;
 }
 
 #skills {
@@ -24,7 +26,7 @@
 }
 
 #contact {
-    background: #ffffff;
+    background: #f8f8f8;
     height: auto;
     text-align: center;
 }
@@ -257,6 +259,222 @@
         transform: translate(0, 0);
         opacity: 1;
     }
+}
+
+/* #endregion */
+
+/* #region projects-new */
+
+.showcase-card {
+    position: relative;
+
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.showcase-header {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+
+    position: relative;
+}
+ 
+.showcase-header img {
+    display: inline-block;
+    height: 70%;
+    margin: 25px 0;
+}
+
+
+#hssc-header {
+    background-color: #f3f3f3;
+}
+
+#issia-header {
+    background-color: #952C50;
+}
+
+.showcase-half-width {
+    width: 50%;
+    height: 320px;
+}
+
+.showcase-full-width {
+    width: 100%;
+    height: 320px;
+}
+
+.showcases-container {
+    border-radius: 8px;
+    clip-path: inset(0% 0% 0% 0% round 16px);
+    -webkit-clip-path: inset(0% 0% 0% 0% round 16px);
+    text-align: left;
+
+    font-size: 0;
+}
+
+
+
+.showcase-card .project-vignette {
+    box-shadow: inset 0px 0px 230px 70px rgba(0,0,0,0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    transition: 200ms ease box-shadow;
+}
+
+.showcase-card .project-background {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+
+    transform: scale(1);
+
+    transition: 200ms ease transform;
+}
+
+.showcase-card .project-header {
+    position: absolute;
+    z-index: 4;
+    max-width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+
+    transition: 200ms ease transform, 200ms ease top, 200ms opacity;
+}
+
+.showcase-card .project-header-text {
+    position: absolute;
+    z-index: 4;
+    max-width: 90%;
+    text-align: center;
+    font-size: 36px;
+    line-height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+
+    margin: 0;
+
+    transition: 200ms ease transform, 200ms ease top, 200ms opacity;
+}
+
+
+.showcase-card .project-description {
+    position: absolute;
+    transform: translate(-50%, -55%);
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    width: 90%;
+
+    font-size: 20px;
+
+    opacity: 0;
+
+    transition: 200ms ease transform, 200ms ease top, 200ms ease opacity;
+
+    text-align: center;
+}
+
+.showcase-card .project-age-container {
+    border-radius: 0 0 0 16px;
+    background-color:#ce2828;
+    position: absolute;
+    z-index: 4;
+    height: 30px;
+    width: 130px;
+    padding: 2px;
+
+    right: 0;
+    transform: translate(0, -100%);
+
+    font-size: 20px;
+
+    text-align: center;
+
+    transition: 200ms ease transform;
+    
+    user-select: none;
+}
+
+.showcase-card  .project-description > p {
+    margin-top: 0;
+}
+
+.showcase-card:hover .project-header, .showcase-card:hover .project-header-text {
+    transform: translate(-50%, -100%);
+    top: 120px;
+}
+
+.showcase-card:hover .project-description {
+    transform: translate(-50%, -50%);
+    top: 70%;
+    opacity: 1;
+}
+
+.showcase-card:hover .project-age-container {
+    transform: translate(0, 0);
+}
+
+.showcase-card:hover .project-background {
+    transform: scale(1.05);
+}
+
+.showcase-card:hover .project-vignette {
+    box-shadow: inset 0px 0px 230px 90px rgba(0,0,0,1);
+}
+
+/* Projects below min size */
+
+@media (max-width: 1100px) {
+    .showcase-card {
+        position: relative;
+    
+        color: white;
+        display: block;
+        overflow: hidden;
+    
+    }
+
+    
+    .showcase-half-width {
+        width: 100%;
+        height: 270px;
+    }
+    
+    .showcase-full-width {
+        width: 100%;
+        height: 300px;
+    }
+    
+    
+    .showcase-card  .project-description > p {
+        margin-top: 0;
+    }
+    
+    .showcase-card:hover .project-header, .showcase-card:hover .project-header-text {
+        transform: translate(-50%, -55%);
+        top: 50%;
+        opacity: 0;
+    }
+    
+    .showcase-card:hover .project-description {
+        transform: translate(-50%, -40%);
+        top: 50%;
+        opacity: 1;
+    }
+    
+  
 }
 
 /* #endregion */
