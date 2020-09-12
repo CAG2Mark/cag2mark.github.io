@@ -9,8 +9,9 @@ html {
 }
 
 body {
-    font-family: "acumin-pro", -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Arial, 'Helvetica Neue', sans-serif;
-    font-size: 22px;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Arial, 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    line-height: 34px;
 
     color: rgb(51, 51, 51);
 
@@ -43,7 +44,10 @@ h4 {
 .width-wrapper {
     margin: 60px auto 30px auto;
     max-width: 850px;
+}
 
+.horizontal-row * {
+    display: inline-block;
 }
 
 .card-inner-padding {
@@ -219,12 +223,12 @@ h4 {
 .navigation-list li {
     float: left;
     font-size: 26px;
-    margin: 0px 10px 0 0;
+    margin: 1px 12px 0 0;
 }
 
 
 .navigation-list li a {
-    font-family: "Roboto Mono", 'Consolas', 'Courier New', Courier, monospace;
+    font-family: "Inter", 'Consolas', 'Courier New', Courier, monospace;
     font-weight: bold;
 
     float: left;
@@ -356,8 +360,9 @@ h4 {
 /* FONT AWESOME */
 .fa {
     padding: 20px;
-    font-size: 30px;
+    font-size: 32px;
     width: 20px;
+    height: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -367,6 +372,11 @@ h4 {
 
 .fa-linkedin {
     background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: black;
     color: white;
 }
 
