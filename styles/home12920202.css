@@ -312,6 +312,9 @@
     display: inline-block;
     overflow: hidden;
 
+    
+    line-height: 30px;
+
 }
 
 .showcase-header {
@@ -353,7 +356,7 @@
     -webkit-clip-path: inset(0% 0% 0% 0% round 16px);
     text-align: left;
 
-    line-height: normal !important;
+    line-height: normal;
 
     font-size: 0;
 }
@@ -370,6 +373,7 @@
     opacity: 0.9;
 
     transition: 200ms ease opacity;
+
 }
 
 .showcase-card .project-background {
