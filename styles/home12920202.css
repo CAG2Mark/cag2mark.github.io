@@ -353,6 +353,8 @@
     -webkit-clip-path: inset(0% 0% 0% 0% round 16px);
     text-align: left;
 
+    line-height: normal !important;
+
     font-size: 0;
 }
 
