@@ -1,3 +1,5 @@
+/* jshint esversion:6 */
+
 // lock height
 
 document.getElementById("projects").style.minHeight = document.getElementById("projects").getBoundingClientRect().height;
@@ -42,7 +44,17 @@ function handleScroll() {
         let lower = window.pageYOffset + pair[1].getBoundingClientRect().top - leeway;
         let upper = window.pageYOffset + pair[1].getBoundingClientRect().top + pair[1].getBoundingClientRect().height - leeway;
 
-        if (lower <= window.scrollY && window.scrollY < upper) {
+        let atBottomofPage = (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
+        let isBottom = pair[0].getAttribute("data-section-bottom") == "true";
+
+        if (atBottomofPage) {
+            if (isBottom) {
+                pair[0].classList.add("navigation-selected");
+            } else {
+                pair[0].classList.remove("navigation-selected");
+            }
+        }
+        else if ((lower <= window.scrollY && window.scrollY < upper)) {
             pair[0].classList.add("navigation-selected");
         } else {
             pair[0].classList.remove("navigation-selected");

@@ -24,15 +24,16 @@
     <base href="index.html" target="_blank">
 
     <!-- GLOBAL CSS & FONTS -->
-    <link rel="stylesheet" href="https://use.typekit.net/utd2ycl.css">
-    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/global12920201.css">
     <link rel="stylesheet" href="styles/animation-styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="content/fonts/inter.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="icon" type="image/png" href="content/icons/favicon.ico">
 
     <!-- PAGE SPECIFIC CSS -->
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home17920201.css">
 
 
 </head>
@@ -132,14 +133,27 @@
                 Since starting programming when I
                 was 10, I have created web and software solutions for various organisations while still studying for
                 high school. I also devote lots of time to my own personal
-                projects, of which are free for anyone to use and have empowered individuals and generated careers and
-                created brands.</div>
+                projects, of which are free for use. It has have empowered individuals, generated careers and
+                created brands.
+            </div>
 
             <br>
 
             <div id="about3" class="animation fade-initial" data-animation-head="false" data-animation-type="fade"
+                data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16" data-animation-next-element="about4">
+
+                I love playing with computers and bringing ideas I've had in the back of my mind into life. I love
+                helping others by fulfilling their needs with well-crafted software. I love how if I find something
+                tedious, I can write a program to automate it. For me, this is the joy of
+                programming.
+
+            </div>
+
+            <br>
+
+            <div id="about4" class="animation fade-initial" data-animation-head="false" data-animation-type="fade"
                 data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="interests-column">I am currently a high school student in Hong Kong
+                data-animation-next-element="interests-column">Currently, I am a student in Hong Kong
                 studying for the IB Diploma.</div>
 
             <br>
@@ -173,13 +187,14 @@
             <div style="height: 16px"></div>
 
             <h1 id="languages-title" class="animation" data-animation-head="false" data-animation-type="typewriter"
-                data-typewriter-rate="30" data-typewriter-text="Languages I've worked in." data-animation-next-element="languages-container">	&nbsp;</h1>
+                data-typewriter-rate="30" data-typewriter-text="Languages I can use."
+                data-animation-next-element="languages-container"> &nbsp;</h1>
 
 
         </div>
 
-        <div id="languages-container" class="animation fade-initial" data-animation-head="false" data-animation-type="fade"
-            data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
+        <div id="languages-container" class="animation fade-initial" data-animation-head="false"
+            data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
             <div style="width: 80px">
                 <span><strong>English</strong></span>
                 <br>
@@ -195,6 +210,7 @@
                 <br>
                 <span>&lt;p&gt;Hello world!&lt;/p&gt;</span>
             </div>
+            <br class="languages-container-size-2">
             <div style="width: 46px">
                 <span><strong>CSS</strong></span>
                 <br>
@@ -205,7 +221,7 @@
                 <br>
                 <span>console.log("spillMySecret();");</span>
             </div>
-            <br>
+            <br class="languages-container-size-1">
             <div style="width: 84px">
                 <span><strong>Node.JS</strong></span>
                 <br>
@@ -216,6 +232,7 @@
                 <br>
                 <span>Console.WriteLine("Hello world!");</span>
             </div>
+            <br class="languages-container-size-2">
             <div style="width: 46px">
                 <span><strong>Java</strong></span>
                 <br>
@@ -239,10 +256,8 @@
         </div>
     </div>
 
-
-
     <!-- past projects -->
-    <div class="section light-text" id="projects">
+    <div class="section" id="projects">
         <div class="inner-padding">
 
             <noscript>
@@ -260,230 +275,160 @@
                 <p>Uninstall any extension that may disable JavaScript in your browser.</p>
             </noscript>
 
-            <span id="projects-title" class="large-monospace light-text animation" data-animation-type="typewriter"
-                data-typewriter-rate="50" data-typewriter-text="let projects = {" data-animation-playonscroll="true"
-                data-animation-scroll-leeway="150" data-animation-next-element="flylive"></span>
+            <div>
+                <h1 class="animation" data-animation-type="typewriter" data-typewriter-rate="50"
+                    data-typewriter-text="My Personal Projects." data-animation-playonscroll="true"
+                    data-animation-scroll-leeway="50" data-animation-next-element="projects-container"></h1>
 
-            <!-- flylive -->
+                <div id="projects-container" class="showcases-container animation fade-initial" id="flylive"
+                    data-animation-head="false" data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0"
+                    data-fade-yoffset="-16">
+                    <div class="showcase-card showcase-half-width">
+                        <div class="project-vignette"></div>
+                        <img class="project-background" src="content/projects/flylive-1.jpg" alt="">
+                        <img src="content/logos/FlyLive Logo.png" alt="FlyLive Logo" class="project-header">
+                        <div class="project-description">
+                            <p>FlyLive was the only tool of its kind available publicly at the
+                                time. It
+                                allows flight simulator livestreamers to display simulator information on their screen.
+                            </p>
+                        </div>
 
-            <div class="card-animation-wrapper animation fade-initial" id="flylive" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="flychrono">
-                <div class="card-wrapper">
-                    <div class="card-inner-padding">
-                        <span class="small-monospace light-text">
-                            FlyLive
-                        </span>
-                        <p class="light-text">
-                            Made in: <b>March 2017</b>
-                            <br>
-                            At age: <b>13</b>
-                        </p>
-                        <p class="light-text">FlyLive was the only tool of its kind available publicly at the
-                            time. It
-                            allows flight simulator livestreamers to extract data from the flight simulator and
-                            display
-                            it on their stream through the use of constantly-updating text files and OBS. This
-                            software
-                            is still used by streamers to this day.</p>
+                        <div class="project-age-container">
+                            <span>At age: 13</span>
+                        </div>
+                    </div>
 
-                        <img src="content/projects/flylive-1.jpg" alt="FlyLive Legacy Screenshot">
+                    <div class="showcase-card showcase-half-width">
+                        <div class="project-vignette"></div>
+                        <img class="project-background" src="content/projects/flychrono-1.png" alt="">
+                        <img src="content/logos/FlyChrono.png" alt="FlyChrono Logo" class="project-header">
+                        <div class="project-description">
+                            <p>
+                                FlyChrono is a time syncer for flight simulators. It syncs the simulator's time with the
+                                real-world time. Other solutions existed but FlyChrono was the only free solution.
+                            </p>
+                        </div>
 
+                        <div class="project-age-container">
+                            <span>At age: 14</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-card showcase-half-width">
+                        <div class="project-vignette"></div>
+                        <img class="project-background" src="content/projects/flylive-studio-1.jpg" alt="">
+                        <img src="content/logos/FlyLive Studio Logo.png" alt="FlyLive Studio Logo"
+                            class="project-header">
+                        <div class="project-description">
+                            <p>
+                                FlyLive Studio has helped build brands, careers and lives. It currently powers a
+                                significant amount of flight simulator livestreams. It is a complete reimagining of the
+                                old FlyLive.
+                            </p>
+                        </div>
+
+                        <div class="project-age-container">
+                            <span>At age: 15</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-card showcase-half-width">
+                        <div class="project-vignette"></div>
+                        <img class="project-background" src="content/projects/flychrono2-1.jpg" alt="">
+                        <img src="content/logos/FlyChrono2 Logo.png" alt="FlyChrono v2 Studio Logo"
+                            class="project-header">
+                        <div class="project-description">
+                            <p>
+                                FlyChrono v2 was a rewrite of my old but successful FlyChrono. It featured new features
+                                such as a brand new UI, alarms and a mini-window mode. It is still used by many flight
+                                simmers.
+                            </p>
+                        </div>
+
+                        <div class="project-age-container">
+                            <span>At age: 16</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- sep -->
+            <div style="height: 16px"></div>
 
-            <!-- flychrono -->
+            <h1 class="animation" data-animation-type="typewriter" data-typewriter-rate="50"
+                data-typewriter-text="Who I've worked for." data-animation-playonscroll="true"
+                data-animation-scroll-leeway="100" data-animation-next-element="hssc-container"></h1>
 
-
-            <div class="card-animation-wrapper animation fade-initial" id="flychrono" data-animation-head="false"
+            <div id="hssc-container" class="showcases-container animation fade-initial" data-animation-head="false"
                 data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="flycentral">
-                <div class="card-wrapper">
-                    <div class="card-inner-padding">
-                        <span class="small-monospace light-text">
-                            FlyChrono
-                        </span>
-                        <p class="light-text">
-                            Made in: <b>December 2017</b>
-                            <br>
-                            At age: <b>14</b>
-                        </p>
-                        <p class="light-text">FlyChrono is a time syncer for flight simulators. It syncs the
-                            simulator's time with the real-world time. Other solutions existed but
-                            FlyChrono was the only free solution. A significant portion of the flight simulator
-                            users have this installed.
-                        </p>
+                data-animation-next-element="issia-container">
 
+                <div id="hssc-header" class="showcase-header">
+                    <img src="content/projects/hssc.png" alt="">
+                </div>
+
+                <div class="showcase-card showcase-half-width">
+                    <div class="project-vignette"></div>
+                    <img class="project-background" src="content/projects/hssc-1.jpg" alt="">
+                    <h2 class="project-header-text">HSSC Website</h2>
+                    <div class="project-description">
+                        <p>
+                            As a student organisation, the HSSC allows students of to browse
+                            their activities. It is also a place for them to put all their student-submitted
+                            articles.
+                        </p>
+                    </div>
+
+                    <div class="project-age-container">
+                        <span>At age: 16</span>
+                    </div>
+                </div>
+
+                <div class="showcase-card showcase-half-width">
+                    <div class="project-vignette"></div>
+                    <img class="project-background" src="content/projects/word-of-the-day-1.jpg" alt="">
+                    <h2 class="project-header-text">Word of the Day Widget</h2>
+                    <div class="project-description">
+                        <p>
+                            The HSSC provisioned the ‘Word of the Day’ widget to provide a daily opportunity for
+                            students to build their English vocabulary and incorporate learning into the school
+                            homepage.
+                        </p>
+                    </div>
+
+                    <div class="project-age-container">
+                        <span>At age: 16</span>
                     </div>
                 </div>
             </div>
 
-
-            <!-- flycentral -->
-
-
-            <div class="card-animation-wrapper animation fade-initial" id="flycentral" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="flylive-studio">
-                <div class="card-wrapper">
-                    <div class="card-inner-padding">
-                        <span class="small-monospace light-text">
-                            FlyCentral
-                        </span>
-                        <p class="light-text">
-                            Made in: <b>December 2017</b>
-                            <br>
-                            At age: <b>14</b>
-                        </p>
-                        <p class="light-text">FlyCentral serves as the hub for all of my software. One can
-                            install
-                            and manage all of my software from it.</p>
-
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- flylive studio -->
-
-
-            <div class="card-animation-wrapper animation fade-initial" id="flylive-studio" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="word-of-the-day">
-                <div class="card-wrapper">
-                    <div class="card-inner-padding">
-                        <span class="small-monospace light-text">
-                            FlyLive Studio
-                        </span>
-                        <p class="light-text">
-                            Made in: <b>December 2018</b>
-                            <br>
-                            At age: <b>15</b>
-                        </p>
-                        <p class="light-text">FlyLive Studio was both a breakthrough for my programming skill
-                            and
-                            the streaming community. It allows people to have even richer overlays than before
-                            thanks to FlyLive Studio's built-in overlay editor. The nature of the overlay editor
-                            also provided much faster data update rates (up to 20 times a second, as opposed to
-                            once
-                            per second before). It also includes a chatbot built using the Twitch API. This
-                            software
-                            has helped streamers with over 30K followers build their brand and ultimately their
-                            lives.
-                        </p>
-
-                        <img src="content/projects/flylive-studio-1.jpg" alt="Flylive studio Screenshot">
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- word of the day -->
-
-
-            <div class="card-animation-wrapper animation fade-initial" id="word-of-the-day" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="blog-system">
-                <div class="card-wrapper">
-                    <div class="card-inner-padding">
-                        <span class="small-monospace light-text">
-                            Word Of the Day Widget
-                        </span>
-                        <p class="light-text">
-                            Made in: <b>November 2019</b>
-                            <br>
-                            At age: <b>16</b>
-                        </p>
-                        <p class="light-text">A student organisation approached me, asking me to make a "word of
-                            the
-                            day" widget for them. In many ways, this widget was my introduction to web-app
-                            design.
-                            The widget would draw data from a Google Sheet using the Google API to display a
-                            "word of
-                            the day" on the client-side. This was my first time working with cloud hosting.</p>
-
-                        <img src="content/projects/word-of-the-day-1.jpg" alt="Word of the day widget Screenshot">
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- blog system -->
-
-
-            <div class="card-animation-wrapper animation fade-initial" id="blog-system" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="hssc-issia">
-                <div class="card-wrapper">
-                    <div class="card-inner-padding">
-                        <span class="small-monospace light-text">
-                            Blog System
-                        </span>
-                        <p class="light-text">
-                            Made in: <b>April 2020</b>
-                            <br>
-                            At age: <b>16</b>
-                        </p>
-                        <p class="light-text">A student organisation in my school required a website which would
-                            allow them to post their articles online. They approached me and asked me to make a
-                            blog
-                            system. The making of this system extended my already strong app-design skills and
-                            was
-                            my first time designing a native desktop app for a specific client.</p>
-
-                        <img src="content/projects/blog-system-1.jpg" alt="Blog System Screenshot">
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- hssc and issia website -->
-
-
-            <div class="card-animation-wrapper animation fade-initial" id="hssc-issia" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="projects-end">
-                <div class="card-wrapper">
-                    <div class="card-inner-padding">
-                        <span class="small-monospace light-text">
-                            HSSC & ISSIA Website
-                        </span>
-                        <p class="light-text">
-                            Made in: <b>April 2020</b>
-                            <br>
-                            At age: <b>16</b>
-                        </p>
-                        <p class="light-text">Using my now complete blog system, I designed websites for the
-                            HSSC
-                            and the ISSIA (two student organisations, one of which is international). This
-                            greatly
-                            strengthened my previously loose web design skills.</p>
-
-
-                        <form action="https://issiahk.org/">
-                            <input class="light-button" type="submit" value="Visit the ISSIA website" />
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <br>
-
-            <!-- spacer -->
             <div style="height: 32px"></div>
 
-            <span id="projects-end" class="large-monospace light-text animation" data-animation-type="typewriter"
-                data-typewriter-rate="50" data-typewriter-text="};" data-animation-head="false"></span>
+            <div id="issia-container" class="showcases-container animation fade-initial" data-animation-head="false"
+                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
 
-            <br>
+                <div id="issia-header" class="showcase-header light-text">
+                    <img src="content/projects/issia.png" class="org-logo" alt="">
+                </div>
+
+                <div class="showcase-card showcase-full-width">
+                    <div class="project-vignette"></div>
+                    <img class="project-background" src="content/projects/issia-1.jpg" alt="">
+                    <h2 class="project-header-text">ISSIA Website</h2>
+                    <div class="project-description">
+                        <p>
+                            The ISSIA is a large, international student-led organisation. The website serves as an
+                            online alternative to their physical magazine. It is also a place for new members to be
+                            recruited.
+                        </p>
+                    </div>
+
+                    <div class="project-age-container">
+                        <span>At age: 16</span>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -500,6 +445,17 @@
             <div id="email-container">
                 <a id="email-text">JavaScript required</a>
             </div>
+
+            <div class="horizontal-row">
+
+                <a style="margin-top: 12px" target="_blank" href="https://www.linkedin.com/in/mark-ng-b3958b135/"
+                    class="fa fa-linkedin"></a>
+
+                <a style="margin-top: 12px" target="_blank" href="https://www.github.com/cag2mark"
+                    class="fa fa-github"></a>
+
+            </div>
+
         </div>
 
     </div>
@@ -507,7 +463,7 @@
     <!-- footer -->
     <div class="section" id="footer">
 
-
+        <p id="copyright">© 2020 Mark Ng</p>
     </div>
 
     <!-- scripts -->

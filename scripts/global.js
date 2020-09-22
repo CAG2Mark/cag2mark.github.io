@@ -1,6 +1,8 @@
+/* jshint esversion:6 */
+
 /* navbar open close - get all navbar items */
 
-var navItems = new Array();
+var navItems = [];
 globalNavInit();
 
 function globalNavInit() {
