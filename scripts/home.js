@@ -44,7 +44,7 @@ function handleScroll() {
         let lower = window.pageYOffset + pair[1].getBoundingClientRect().top - leeway;
         let upper = window.pageYOffset + pair[1].getBoundingClientRect().top + pair[1].getBoundingClientRect().height - leeway;
 
-        let atBottomofPage = (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
+        let atBottomofPage = (window.innerHeight + window.scrollY) + 5 >= document.body.offsetHeight;
         let isBottom = pair[0].getAttribute("data-section-bottom") == "true";
 
         if (atBottomofPage) {
