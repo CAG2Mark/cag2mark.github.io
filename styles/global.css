@@ -228,7 +228,7 @@ h4 {
 
 
 .navigation-list li a {
-    font-family: "Inter", 'Consolas', 'Courier New', Courier, monospace;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Arial, 'Helvetica Neue', sans-serif;
     font-weight: bold;
 
     float: left;
