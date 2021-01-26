@@ -129,7 +129,7 @@ h4 {
     position: relative;
     width: 24px;
     height: 24px;
-    margin: 18px 0 0 0;
+    margin: 15px 0 0 0;
 
     vertical-align: middle;
 }
@@ -329,6 +329,11 @@ h4 {
 /* NAVBAR MAX WIDTH */
 
 @media (max-width: 1000px) {
+
+    .navigation::after {
+        height: 1px;
+        background-color: #dfdfdf;
+    }
 
     .navigation {
         text-align: left;
