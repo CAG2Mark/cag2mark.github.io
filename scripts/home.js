@@ -35,6 +35,8 @@ handleScroll();
 
 // changes selected navbar item based on the scroll position
 function handleScroll() {
+    document.documentElement.dataset.scroll = window.scrollY;
+    
     for (var i = 0; i < pairs.length; i++) {
         let pair = pairs[i];
 
