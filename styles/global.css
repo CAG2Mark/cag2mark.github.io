@@ -207,7 +207,7 @@ h4 {
     text-align: center;
 }
 
-html:not([data-scroll='0']) .navigation::after {
+html:not([data-scroll='30']) .navigation::after {
     opacity: 1;
 }
 
@@ -229,8 +229,8 @@ html:not([data-scroll='0']) .navigation::after {
 
 .navigation-background {
     background-color: rgba(255, 255, 255, 0.753);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
 
 .navigation-list {
