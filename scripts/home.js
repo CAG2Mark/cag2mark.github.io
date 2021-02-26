@@ -64,6 +64,28 @@ function handleScroll() {
     }
 }
 
+// mobile horizontal scrolling of language container
+let langWrap = document.getElementById("languages-wrapper");
+let langContainer = document.getElementById("languages-container");
+langWrap.addEventListener('scroll', languageScroll);
+
+// focus into selected
+let focusElem = document.getElementById("language-mobile-focus");
+if (focusElem) {
+    let rect = focusElem.getBoundingClientRect();
+    langWrap.scrollLeft = (rect.left + rect.right - langWrap.offsetWidth) / 2 ;
+}
+function languageScroll() {
+    let children = langContainer.children;
+    for (let i = 0; i < children.length; ++i) {
+        let child = children[i];
+        let rect = child.getBoundingClientRect();
+        let pos = (rect.left + rect.right - window.innerWidth ) / 2;
+        if (Math.abs(pos) < 45) child.classList.add("force-hover");
+        else child.classList.remove("force-hover");
+    }
+}
+
 // Hey, if you're looking at this, then you are a cheater and you don't deserve my secrets.
 function spillMySecret() {
     document.getElementById("languages-title").innerHTML = "Languages (secret edition)"

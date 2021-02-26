@@ -206,65 +206,86 @@
 
         </div>
 
-        <div id="languages-container" class="animation fade-initial" data-animation-head="false"
-            data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
-            <div style="width: 80px">
-                <span><strong>English</strong></span>
-                <br>
-                <span>Hello world!</span>
-            </div>
-            <div style="width: 82px">
-                <span><strong>Chinese</strong></span>
-                <br>
-                <span>你好世界!</span>
-            </div>
-            <div>
-                <span><strong>HTML</strong></span>
-                <br>
-                <span>&lt;p&gt;Hello world!&lt;/p&gt;</span>
-            </div>
-            <br class="languages-container-size-2">
-            <div style="width: 46px">
-                <span><strong>CSS</strong></span>
-                <br>
-                <span>p::after { content: "Hello world!"; }</span>
-            </div>
-            <div style="width: 25px">
-                <span><strong>JS</strong></span>
-                <br>
-                <span>console.log("spillMySecret();");</span>
-            </div>
-            <br class="languages-container-size-1">
-            <div style="width: 84px">
-                <span><strong>Node.JS</strong></span>
-                <br>
-                <span>res.end("Hello world!");</span>
-            </div>
-            <div style="width: 28px">
-                <span><strong>C#</strong></span>
-                <br>
-                <span>Console.WriteLine("Hello world!");</span>
-            </div>
-            <br class="languages-container-size-2">
-            <div style="width: 46px">
-                <span><strong>Java</strong></span>
-                <br>
-                <span>System.out.println("Hello world!");</span>
-            </div>
-            <div style="width: 74px">
-                <span><strong>Python</strong></span>
-                <br>
-                <span>print("Hello world!")</span>
-            </div>
-            <div style="width: 60px">
-                <span><strong>C/C++</strong></span>
-                <br>
-                <span>printf("Hello world!");</span>
-            </div>
-            <div style="opacity: 0; width: 0; display: none" id="invis-thing-hehe">
-                <span><strong>mcfunction</strong></span>
-                <br>
-                <span>tellraw @a {"text":"Hello world!"}</span>
+        <div id="languages-wrapper">
+            <div id="languages-container" class="animation fade-initial" data-animation-head="false"
+                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
+                <span id="language-filler"></span>
+                <div style="width: 80px">
+                    <span><strong>English</strong></span>
+                    <br>
+                    <span>Hello world!</span>
+                </div>
+                <div style="width: 82px">
+                    <span><strong>Chinese</strong></span>
+                    <br>
+                    <span>你好世界!</span>
+                </div>
+                <div>
+                    <span><strong>HTML</strong></span>
+                    <br>
+                    <span>&lt;p&gt;Hello world!&lt;/p&gt;</span>
+                </div>
+                <br class="languages-container-size-2">
+                <div style="width: 46px">
+                    <span><strong>CSS</strong></span>
+                    <br>
+                    <span>p::after { content: "Hello world!"; }</span>
+                </div>
+                <div style="width: 25px">
+                    <span><strong>JS</strong></span>
+                    <br>
+                    <span>console.log("spillMySecret();");</span>
+                </div>
+                <br class="languages-container-size-1">
+                <div style="width: 84px">
+                    <span><strong>Node.JS</strong></span>
+                    <br>
+                    <span>res.end("Hello world!");</span>
+                </div>
+                <div style="width: 28px" id="language-mobile-focus">
+                    <span><strong>C#</strong></span>
+                    <br>
+                    <span>Console.WriteLine("Hello world!");</span>
+                </div>
+                <br class="languages-container-size-2">
+                <div style="width: 46px">
+                    <span><strong>Java</strong></span>
+                    <br>
+                    <span>System.out.println("Hello world!");</span>
+                </div>
+                <div style="width: 74px">
+                    <span><strong>Python</strong></span>
+                    <br>
+                    <span>print("Hello world!")</span>
+                </div>
+                <div style="width: 60px">
+                    <span><strong>C/C++</strong></span>
+                    <br>
+                    <span>printf("Hello world!");</span>
+                </div>
+                <br class="languages-container-size-2">
+                <div style="opacity: 0; width: 0; display: none" id="invis-thing-hehe">
+                    <span><strong>mcfunction</strong></span>
+                    <br>
+                    <span>tellraw @a {"text":"Hello world!"}</span>
+                </div>
+                <br class="languages-container-size-1">
+                <div style="width: 60px">
+                    <span><strong>Kotlin</strong></span>
+                    <br>
+                    <span>println("Hello world!");</span>
+                </div>
+                <div style="width: 100px">
+                    <span><strong>Bash/Shell</strong></span>
+                    <br>
+                    <span>echo "Hello World"</span>
+                </div>
+                <div style="width: 70px">
+                    <span><strong>LaTeX</strong></span>
+                    <br>
+                    <img src="content/latex.png" style="width:130px;margin-top:10px">
+                </div>
+
             </div>
         </div>
     </div>
@@ -370,11 +391,13 @@
                         <div class="project-description">
                             <p>
                                 OpenSkillBot was a fun pastime project for me to learn the Discord API, and is inspired
-                                by the needs of some of the competitive gaming environments I've been in. It is a Discord
-                                bot that manages player ranks and skill using the TrueSkill system. 
-                                <a href="https://github.com/CAG2Mark/OpenSkillBot" class="linkfix-white">View on GitHub</a>
+                                by the needs of some of the competitive gaming environments I've been in. It is a
+                                Discord
+                                bot that manages player ranks and skill using the TrueSkill system.
+                                <a href="https://github.com/CAG2Mark/OpenSkillBot" class="linkfix-white">View on
+                                    GitHub</a>
                             </p>
-                         
+
                         </div>
 
                         <div class="project-age-container">

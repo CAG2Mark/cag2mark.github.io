@@ -54,7 +54,7 @@
     text-align: center;
     overflow-x: visible;
 
-    height: 116px;
+    height: 165px;
 }
 
 
@@ -90,9 +90,19 @@
     display: none;
 }
 
-#languages-container > div:hover {
-    max-height: 72px;
+@media (min-width: 1101px) {
+    #languages-container > div:hover {
+        max-height: 72px !important;
+        width: 300px !important;
+    }
+}
+.force-hover {
+    max-height: 72px !important;
     width: 300px !important;
+}
+
+#language-filler { 
+    display: none;
 }
 
 /* Languages container below min size */
@@ -108,7 +118,7 @@
     }
 
     #languages-container {
-        height: 162px;
+        height: 220px;
     }
 
 }
@@ -118,18 +128,33 @@
         display: none;
     }
 
-    #languages-container > div {
-        margin: 4px 0;
-        display: block;
-        width: calc(100% - 28px) !important;
+    #languages-wrapper {
+        position: relative;
+        margin: 0 0 20px 0;
+        width: 100vw;
+        padding: 0 5% 5% 5%;
+        margin-left: calc(-1 * 100vw / 20);
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 100px;
+        margin-bottom: -36px;
+        margin-top: -24px;
     }
 
-    #languages-container > div:hover  {
-        width: calc(100% - 28px) !important;
+    #language-filler {
+        display: inline-block;
+        height: 72px;
+        width: 1px;
     }
 
     #languages-container {
-        height: auto;
+        position: absolute;
+        width: 2100px;
+        text-align: center;
+    }
+
+    #languages-container > div {
+        vertical-align: middle;
     }
 }
 
