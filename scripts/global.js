@@ -18,7 +18,6 @@ function globalNavInit() {
 
         anchor.addEventListener('click', hamburgerClose);
     }
-
 }
 
 
