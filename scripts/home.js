@@ -76,7 +76,7 @@ if (focusElem) {
     langWrap.scrollLeft = (rect.left + rect.right - langWrap.offsetWidth) / 2 ;
 }
 function languageScroll() {
-    let children = langContainer.children;
+    let children = langContainer.getElementsByTagName("div");
     for (let i = 0; i < children.length; ++i) {
         let child = children[i];
         let rect = child.getBoundingClientRect();

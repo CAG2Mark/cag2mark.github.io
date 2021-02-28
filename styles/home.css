@@ -79,7 +79,7 @@
 
     overflow: hidden;
 
-    transition: 200ms ease max-height, 200ms ease width, 200ms box-shadow, 200ms opacity;
+    transition: 300ms ease max-height, 300ms ease width, 300ms box-shadow, 300ms opacity;
 }
 
 .languages-container-size-1 {
