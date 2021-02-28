@@ -90,7 +90,7 @@
     display: none;
 }
 
-@media (min-width: 1101px) {
+@media (min-width: 731px) {
     #languages-container > div:hover {
         max-height: 72px !important;
         width: 300px !important;
