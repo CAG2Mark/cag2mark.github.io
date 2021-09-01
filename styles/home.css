@@ -175,7 +175,7 @@
 }
 
 #interests-column > div > div {
-    height: 100%;
+    height: 400px;
     min-height: 16px;
     background: rgba(240, 240, 240, 0.9);
     color: #1f1f1f;
@@ -186,6 +186,12 @@
     padding: 4px 12px 0px 12px;
 
     transition: 200ms ease transform, 200ms box-shadow;
+}
+
+@media (max-width: 880px) {
+    #interests-column > div > div {
+        height: 460px;
+    }
 }
 
 #interests-column > div > div:hover {
@@ -655,6 +661,7 @@
     #interests-column > div > div {    
         margin: 16px;
         padding: 4px 12px;
+        height: 100%;
     }
 }
 
