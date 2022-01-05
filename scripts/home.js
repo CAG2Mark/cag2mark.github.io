@@ -110,7 +110,7 @@ lnk.innerHTML = email;
 
 let closed = false;
 // domain moved
-if (!window.location.href.includes("markng.me/")) {
+if (window.location.href.includes("markng.me/")) {
 
     document.body.classList.add("modal-show");
     let dialog = document.getElementById("modal-moved");
