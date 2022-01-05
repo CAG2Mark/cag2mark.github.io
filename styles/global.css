@@ -280,6 +280,7 @@ html:not([data-scroll='30']) .navigation::after {
 }
 
 .btn-design {
+    font-family: Inter, Roboto, Helvetica, Arial, sans-serif;
     font-size: 20px;
     padding: 8px 14px;
     border-radius: 6px;
