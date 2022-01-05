@@ -279,6 +279,39 @@ html:not([data-scroll='30']) .navigation::after {
     color: #181818 !important;
 }
 
+.btn-design {
+    font-size: 20px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.btn-emphasis {
+    background-color: #A3000A;
+    color: white;
+    border-style: none;
+    transition: background-color 150ms;
+    -webkit-transition: background-color 150ms;
+    font-weight: bold;
+}
+
+.btn-emphasis:hover {
+    background-color: #a32931;
+}
+
+.btn-light {
+    background-color: transparent;
+    color: #727272;
+    border-style: none;
+    transition: color 150ms;
+    -webkit-transition: color 150ms;
+}
+
+.btn-light:hover {
+    color: #222222;
+}
+
 /* Source: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 .navigation-list li a::before {
     content: "";

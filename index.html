@@ -3,20 +3,6 @@
 
 <head>
 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104955516-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-104955516-2');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Mark Ng</title>
@@ -24,7 +10,7 @@
     <base href="index.html" target="_blank">
 
     <!-- GLOBAL CSS & FONTS -->
-    <link rel="stylesheet" href="styles/global.css?version=9">
+    <link rel="stylesheet" href="styles/global.css?version=10">
     <link rel="stylesheet" href="styles/animation-styles.css">
     <link href="content/fonts/inter.css" rel="stylesheet">
 
@@ -33,7 +19,7 @@
     <link rel="icon" type="image/png" href="content/icons/favicon.ico">
 
     <!-- PAGE SPECIFIC CSS -->
-    <link rel="stylesheet" href="styles/home.css?version=8">
+    <link rel="stylesheet" href="styles/home.css?version=9">
 
     <!--  Essential META Tags -->
 
@@ -73,6 +59,22 @@
                         data-section-bottom="true">Contact</a>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="modal modal-background modal-start"></div>
+    <!-- moved domain notice -->
+    <div class="modal modal-dialog modal-start" id="modal-moved">
+        <h1 id="modal-domain-title">
+            <span class="red">Psst.</span> I've moved!
+        </h1>
+        <p>I've moved to a new domain, markng.com. My old domain(s) may no longer link to this site in the future.<br>
+            (As I only recently moved, the new domain may not load for you yet. If so, you should stay here.)
+        </p>
+
+        <div class="modal-button-container">
+            <button class="btn-design btn-emphasis" id="domain-redirect-button">Take me there!</button>
+            <button class="btn-design btn-light" id="domain-close-button">I'll stay here.</button>
         </div>
     </div>
 
@@ -534,7 +536,7 @@
 
     <!-- scripts -->
     <script src="scripts/global.js?version=2"></script>
-    <script src="scripts/home.js?version=2"></script>
+    <script src="scripts/home.js?version=3"></script>
     <script src="scripts/animatein.js"></script>
     <script src="scripts/eggs.js"></script>
 </body>

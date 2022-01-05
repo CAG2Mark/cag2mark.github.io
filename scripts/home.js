@@ -107,3 +107,45 @@ let email = username + "@" + domain;
 let lnk = document.getElementById("email-text");
 lnk.setAttribute("href", "mailto:" + email);
 lnk.innerHTML = email;
+
+let closed = false;
+// domain moved
+if (!window.location.href.includes("markng.me/")) return;
+
+document.body.classList.add("modal-show");
+let dialog = document.getElementById("modal-moved");
+let background = document.getElementsByClassName("modal-background")[0];
+setTimeout(() => {
+
+    dialog.classList.remove("modal-start");
+    background.classList.remove("modal-start"); 
+}, 1);
+
+document.getElementById("domain-redirect-button").addEventListener(
+    "click", (o, e) => 
+        window.location.href=window.location.href.replace(".me", ".com"));
+
+document.getElementById("domain-close-button").addEventListener(
+    "click", 
+    (o, e) => {
+        if (closed) return;
+        closed = true;
+
+        let title = document.getElementById("modal-domain-title");
+        title.style.opacity = "0"
+        setTimeout(() => {
+            title.innerHTML = "<span class=\"red\">:(</span>"
+            title.style.opacity = "1"
+
+            setTimeout(() => {
+                dialog.classList.add("modal-start");
+                background.classList.add("modal-start"); 
+                setTimeout(() => {
+                    document.body.classList.remove("modal-show");
+                }, 200);
+            }, 1000);
+        }, 100);
+});
+
+}
+
