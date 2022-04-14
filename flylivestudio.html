@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-scroll="30">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mark Ng</title>
+
+    <base href="index.html" target="_blank">
+
+    <!-- GLOBAL CSS & FONTS -->
+    <link rel="stylesheet" href="styles/global.css?version=11">
+    <link rel="stylesheet" href="styles/animation-styles.css">
+    <link href="content/fonts/inter.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/projects.css?version=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/png" href="content/icons/favicon.ico">
+
+    <!--  Essential META Tags -->
+
+    <meta property="og:title" content="About">
+    <meta property="og:description" content="I code and tinker. Check out all my work over my life.">
+    <meta property="og:image" content="https://markng.com/content/thumb.png">
+    <meta property="og:url" content="https://markng.com/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!--  Non-Essential, But Recommended -->
+
+    <meta property="og:site_name" content="About">
+    <meta name="twitter:image:alt" content="Mark Ng Emblem">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+
+    <!-- top navigation -->
+
+    <div class="navigation navigation-background noselect" id="navbar">
+        <div class="noselect">
+            
+            <div id="hamburger-wrapper">
+                <div class="hamburger-line hamburger-line-top" id="hamburger-line-top"></div>
+                <div class="hamburger-line hamburger-line-bottom" id="hamburger-line-bottom"></div>
+            </div>
+
+            <ul class="navigation-list noselect" id="navigation-list">
+                <li><a class="linkfix noselect" href="./index.html" target="_self" data-section-pair="cover">Home</a></li>
+                <li><a class="linkfix noselect" href="./about.html" target="_self" data-section-pair="about">About</a></li>
+                <li><a class="linkfix noselect  navigation-selected" href="./projects.html" target="_self"
+                        data-section-pair="projects">Projects</a></li>
+                <li><a class="linkfix noselect" href="./index.html#contact" target="_self" data-section-pair="contact"
+                        data-section-bottom="true">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section" id="section-top">
+        <div id="navbar-pad"></div>
+        <a href="projects.html" class="indented-link back-link" draggable="false" target="_self">← Back to Projects</a>
+        <div class="section-content">
+            <div class="info-row-flex">
+                <div class="info-col">
+                    <h1>FlyLive Studio</h1>
+                    <p>
+                        FlyLive Studio, a successor to my old FlyLive project,
+                        was an application which allowed
+                        flight simulator livestreamers to have an overlay
+                        on their livestream which displays flight information
+                        pulled directly from the simulator for free. The
+                        overlay is an HTML file that can be embedded in most 
+                        popular livestreaming clients.
+                    </p>
+                    <p>
+                        It included a full-blown overlay editor not unlike the one
+                        in OBS. This made the overlays more integrated with the
+                        application itself, and allowed overlays to display a 
+                        wider variety of information, as well as have more 
+                        visual flair and faster update rates. 
+                    </p>
+                    <p>
+                        Despite its complexity, it includes pre-made overlays
+                        which makes it accessible to less advanced users.
+                    </p>
+                    <p>
+                        It was made for a high school project, of which,
+                        quoting my supervisor, "the highest distinction grade
+                        does not do it justice".
+                    </p>
+                </div>
+                <div class="info-col">
+                    <img src="content/projects/flylivestudio.png" alt="FlyLive Studio Screenshot" class="project-screenshot">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section-middle">
+        <div id="navbar-pad"></div>
+        <div class="section-content">
+            <div class="info-row-flex info-row-reversed">
+                <div class="info-col">
+                    <h1>Used by Top Streamers</h1>
+                    <p>
+                        FlyLive Studio is still the gold standard for livestreamers
+                        who want to livestream flight simulators with full control
+                        of their branding. This is due to the huge amount of granular
+                        control the streamer is given over every single element
+                        in their overlay. For this reason, it is used by some of the 
+                        biggest flight simulator livestreamers.
+                    </p>
+                </div>
+                <div class="info-col">
+                    <div class="info-panel">
+                        <h2>Top Streamers using FlyLive Studio:</h2>
+                        <a class="indented-link" href="https://www.twitch.tv/chewwy94" draggable="false">Chewwy94</a>
+                        <a class="indented-link" href="https://www.twitch.tv/kenco" draggable="false">Kenco</a>
+                        <a class="indented-link" href="https://www.twitch.tv/airbusftw" draggable="false">AirbusFTW</a>
+                    </div>
+                    <a class="info-panel info-panel-link" href="https://www.twitch.tv/directory/game/Microsoft%20Flight%20Simulator">
+                        <h2>And more...</h2>
+                        <p>There will usually be at least a handful of people
+                            currently livestreaming using FlyLive Studio. You can
+                            check out the Twitch flight simulator page here.
+                        </p>
+                        <span class="panel-link">
+                            <span class="panel-link-text">Twitch</span>
+                            <span class="panel-link-arrow">⟩</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="section" id="footer">
+
+        <p id="copyright">
+            © 2022 Mark Ng
+            <br>
+            <span style="font-size: 16px">
+                This portfolio and all of its systems are designed by Mark Ng
+            </span>
+            <br>
+            <br>
+            <span style="font-size: 16px">
+                Licensed under the GNU GPL-3.0 License
+            </span>
+        </p>
+    </div>
+
+    <!-- scripts -->
+    <script src="scripts/global.js?version=2"></script>
+    <script src="scripts/eggs.js"></script>
+    <script src="scripts/projectpages.js"></script>
+</body>
+
+</html>

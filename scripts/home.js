@@ -64,38 +64,6 @@ function handleScroll() {
     }
 }
 
-// mobile horizontal scrolling of language container
-let langWrap = document.getElementById("languages-wrapper");
-let langContainer = document.getElementById("languages-container");
-langWrap.addEventListener('scroll', languageScroll);
-
-// focus into selected
-let focusElem = document.getElementById("language-mobile-focus");
-if (focusElem) {
-    let rect = focusElem.getBoundingClientRect();
-    langWrap.scrollLeft = (rect.left + rect.right - langWrap.offsetWidth) / 2 ;
-}
-function languageScroll() {
-    let children = langContainer.getElementsByTagName("div");
-    for (let i = 0; i < children.length; ++i) {
-        let child = children[i];
-        let rect = child.getBoundingClientRect();
-        let pos = (rect.left + rect.right - window.innerWidth ) / 2;
-        if (Math.abs(pos) < 45) child.classList.add("force-hover");
-        else child.classList.remove("force-hover");
-    }
-}
-
-// Hey, if you're looking at this, then you are a cheater and you don't deserve my secrets.
-function spillMySecret() {
-    document.getElementById("languages-title").innerHTML = "Languages (secret edition)"
-    var secret = document.getElementById("invis-thing-hehe");
-    secret.style.display = "inline-block";
-    secret.style.width = "130px";
-    secret.style.opacity = "1";
-    console.log("Congratulations! You found an easter egg! Keep looking for more!");
-}
-
 // Email
 
 // Done this way to prevent spambots
@@ -107,44 +75,3 @@ let email = username + "@" + domain;
 let lnk = document.getElementById("email-text");
 lnk.setAttribute("href", "mailto:" + email);
 lnk.innerHTML = email;
-
-let closed = false;
-// domain moved
-if (window.location.href.includes("markng.me/")) {
-
-    document.body.classList.add("modal-show");
-    let dialog = document.getElementById("modal-moved");
-    let background = document.getElementsByClassName("modal-background")[0];
-    setTimeout(() => {
-
-        dialog.classList.remove("modal-start");
-        background.classList.remove("modal-start"); 
-    }, 1);
-
-    document.getElementById("domain-redirect-button").addEventListener(
-        "click", (o, e) => 
-            window.location.href=window.location.href.replace(".me", ".com"));
-
-    document.getElementById("domain-close-button").addEventListener(
-        "click", 
-        (o, e) => {
-            if (closed) return;
-            closed = true;
-
-            let title = document.getElementById("modal-domain-title");
-            title.style.opacity = "0"
-            setTimeout(() => {
-                title.innerHTML = "<span class=\"red\">:(</span>"
-                title.style.opacity = "1"
-
-                setTimeout(() => {
-                    dialog.classList.add("modal-start");
-                    background.classList.add("modal-start"); 
-                    setTimeout(() => {
-                        document.body.classList.remove("modal-show");
-                    }, 200);
-                }, 1000);
-            }, 100);
-    });
-
-}

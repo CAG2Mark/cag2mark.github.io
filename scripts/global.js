@@ -46,10 +46,14 @@ function handleHamburgerChange() {
 
     if (hamburgerOpen) {
         hTop.classList.add("hamburger-line-top-active");
+        hTop.classList.remove("hamburger-line-top-inactive");
         hBottom.classList.add("hamburger-line-bottom-active");
+        hBottom.classList.remove("hamburger-line-bottom-inactive");
     } else {
         hTop.classList.remove("hamburger-line-top-active");
+        hTop.classList.add("hamburger-line-top-inactive");
         hBottom.classList.remove("hamburger-line-bottom-active");
+        hBottom.classList.add("hamburger-line-bottom-inactive");
     }
 
     for (var i = 0; i < navItems.length; i++) {

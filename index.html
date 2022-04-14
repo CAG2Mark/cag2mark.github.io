@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-scroll="30">
 
 <head>
 
@@ -10,8 +10,7 @@
     <base href="index.html" target="_blank">
 
     <!-- GLOBAL CSS & FONTS -->
-    <link rel="stylesheet" href="styles/global.css?version=11">
-    <link rel="stylesheet" href="styles/animation-styles.css">
+    <link rel="stylesheet" href="styles/global.css?version=12">
     <link href="content/fonts/inter.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,14 +18,14 @@
     <link rel="icon" type="image/png" href="content/icons/favicon.ico">
 
     <!-- PAGE SPECIFIC CSS -->
-    <link rel="stylesheet" href="styles/home.css?version=9">
+    <link rel="stylesheet" href="styles/home.css?version=10">
 
     <!--  Essential META Tags -->
 
     <meta property="og:title" content="Portfolio of Mark Ng">
     <meta property="og:description" content="I code and tinker. Check out all my work over my life.">
-    <meta property="og:image" content="https://markng.me/content/thumb.png">
-    <meta property="og:url" content="https://markng.me/">
+    <meta property="og:image" content="https://markng.com/content/thumb.png">
+    <meta property="og:url" content="https://markng.com/">
     <meta name="twitter:card" content="summary_large_image">
 
 
@@ -43,37 +42,25 @@
     <!-- top navigation -->
 
     <div class="navigation navigation-background noselect" id="navbar">
-        <div class="standard-width noselect">
+    </div>
 
+    <div class="navigation noselect">
+        <div class="noselect">
+            
             <div id="hamburger-wrapper">
                 <div class="hamburger-line hamburger-line-top" id="hamburger-line-top"></div>
                 <div class="hamburger-line hamburger-line-bottom" id="hamburger-line-bottom"></div>
             </div>
 
             <ul class="navigation-list noselect" id="navigation-list">
-                <li><a class="linkfix noselect" href="/#cover" target="_self" data-section-pair="cover">Home</a></li>
-                <li><a class="linkfix noselect" href="/#about" target="_self" data-section-pair="about">About</a></li>
-                <li><a class="linkfix noselect" href="/#projects" target="_self"
+                <li><a class="linkfix noselect" href="#cover" target="_self" data-section-pair="cover">Home</a></li>
+                <li><a class="linkfix noselect" href="#about" target="_self" data-section-pair="about">About</a></li>
+                <li><a class="linkfix noselect" href="#projects" target="_self"
                         data-section-pair="projects">Projects</a></li>
-                <li><a class="linkfix noselect" href="/#contact" target="_self" data-section-pair="contact"
+                <li><a class="linkfix noselect" href="#contact" target="_self" data-section-pair="contact"
                         data-section-bottom="true">Contact</a>
                 </li>
             </ul>
-        </div>
-    </div>
-
-    <div class="modal modal-background modal-start"></div>
-    <!-- moved domain notice -->
-    <div class="modal modal-dialog modal-start" id="modal-moved">
-        <h1 id="modal-domain-title">
-            <span class="red">Psst.</span> I've moved!
-        </h1>
-        <p>I've moved to a new domain: markng.com. My old domain(s) may no longer link to this site in the future.
-        </p>
-
-        <div class="modal-button-container">
-            <button class="btn-design btn-emphasis" id="domain-redirect-button">Take me there!</button>
-            <button class="btn-design btn-light" id="domain-close-button">I'll stay here.</button>
         </div>
     </div>
 
@@ -81,33 +68,13 @@
     <div class="section" id="cover">
 
         <div class="vertical-align" id="name-container">
-
-            <span id="cover-page-item1" class="animation cover-intro" data-animation-type="typewriter"
-                data-typewriter-text="var me = new Student(" data-typewriter-rate="65"
-                data-animation-next-element="cover-page-item2"></span>
-
-            <br>
-
-            <span id="cover-page-item2" class="animation cover-intro-large" data-animation-type="typewriter"
-                data-typewriter-text="&quot;Mark Ng&quot;," data-animation-head="false" data-typewriter-rate="65"
-                data-animation-next-element="cover-page-item3"></span>
-            <br>
-
-            <span id="cover-page-item3" class="animation cover-intro-large" data-animation-type="typewriter"
-                data-typewriter-text="&quot;Coder&quot;" data-animation-head="false" data-typewriter-rate="65"
-                data-animation-next-element="cover-page-item4"></span>
-
-            <br>
-
-            <span id="cover-page-item4" data-animation-type="typewriter" class="animation cover-intro"
-                data-typewriter-text=");" data-animation-head="false" data-typewriter-rate="65"></span>
-
-            <br>
-
+            <span class="name-item" id="name-first">Mark</span>
+            <div class="name-item" id="name-sep"></div>
+            <span class="name-item" id="name-second">Ng.</span>
         </div>
 
         <div class="vertical-align" id="emblem-container">
-            <svg id="mn-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            <svg id="mn-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
                 viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
                 <path id="emblemM"
                     d="M32 463v-40-94-113-98-32-15-1l-19 8 66 69 106 109 24 25c7 7 19 2 19-8v-68V95 70l-19 8 67 69 105 109 24 25c10 10 26-6 16-16l-66-69L249 87l-24-25c-7-7-19-2-19 8v203l19-8-66-68L53 87 29 62c-7-7-19-2-19 8v393c0 15 22 15 22 0z" />
@@ -119,364 +86,171 @@
 
         </div>
 
-        <noscript>
-            <div class="vertical-align">
-
-                <span class="typewriter cover-intro"> var me = new Student(</span>
-                <br>
-                <span class="typewriter cover-intro-large">"Mark Ng",</span>
-                <br>
-                <span class="typewriter cover-intro-large">"Coder"</span>
-                <br>
-                <span class="typewriter cover-intro">);</span>
-                <br>
-            </div>
-        </noscript>
-
     </div>
 
-    <div class="section light-text" id="about">
-        <div class="width-wrapper" id="about-wrapper">
-            <h1 class="animation" data-animation-type="typewriter" data-typewriter-rate="50"
-                data-typewriter-text="A little bit about me." data-animation-playonscroll="true"
-                data-animation-scroll-leeway="100" data-animation-next-element="about1"></h1>
-
-            <div id="about1" class="animation fade-initial" data-animation-head="false" data-animation-type="fade"
-                data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16" data-animation-next-element="interests-column">
-                <h2>&gt Hi, I'm Mark.</h2>
-
-                <p>
-                    I'm a student from Hong Kong who enjoys programming. I've been engineering software as hobby since I started middle school and
-                    have created web and software solutions for various organisations while in high school.
-                </p>
-
-                <h2>&gt I learn other stuff, too.</h2>
-                <p>
-                    I'm an IB alumni studying engineering and, in the future, computer science at HKUST. I also have major interests in
-                    maths, physics and sciences in general.
-                </p>
-            </div>
-
-            <div id="interests-column" class="animation fade-initial" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="languages-title">
-                <div>
-                    <div>
-                        <h3>Experience</h3>
-                        <hr>
-                        <p>I am fluent in web design and several programming languages, such as C#, Java, Python,
-                            JavaScript, TypeScript and more.</p>
-                        <p>User experience is something I have a profound interest in - I tend to focus not only on
-                            the visual appeal, but also the ease of use.</p>
+    <div class="section" id="about">
+        <div class="section-content" id="about-wrapper">
+            <div class="info-row-flex">
+                <div class="info-col">
+                    <h1 class="red-color">Hey, I'm Mark!</h1>
+                    <p>
+                        I'm a student from Hong Kong studying Computer Science and Mathematics.
+                        I am also a lover of classical music and am an amateur pianist.
+                    </p>
+                    <p>
+                        Feel free to look around! You can find out more information about me by
+                        clicking on the card in this section, or scroll down to find out about
+                        some of my past projects.
+                    </p>
+                </div>
+                <div class="info-col">
+                    <div class="info-panel">
+                        <h2>
+                            Education
+                        </h2>
+                        <ul>
+                            <li>IB Alumni</li>
+                            <li>Studying at The Hong Kong University of Science and Technology</li>
+                            <li>Graduating in 2025</li>
+                        </ul>
+                        <h2>
+                            Interests
+                        </h2>
+                        <ul>
+                            <li>Computer Science &amp; Programming</li>
+                            <li>Mathematics</li>
+                            <li>Classical Music & Piano</li>
+                        </ul>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>Interests</h3>
-                        <hr>
-                        <p>Being a self-proclaimed nerd, I am hugely interested in maths and physics, and often apply my
-                            programming to solve problems in these areas of science.</p>
-                        <p>In addition to this, I am also hugely interested in aviation, hence why many of my projects
-                            are
-                            software pertaining to flight simulators.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style="height: 16px"></div>
-
-            <h1 id="languages-title" class="animation" data-animation-head="false" data-animation-type="typewriter"
-                data-typewriter-rate="30" data-typewriter-text="Languages I can use."
-                data-animation-next-element="languages-container"> &nbsp;</h1>
-
-
-        </div>
-
-        <div id="languages-wrapper">
-            <div id="languages-container" class="animation fade-initial" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
-                <span id="language-filler"></span>
-                <div style="width: 80px">
-                    <span><strong>English</strong></span>
-                    <br>
-                    <span>Hello world!</span>
-                </div>
-                <div style="width: 82px">
-                    <span><strong>Chinese</strong></span>
-                    <br>
-                    <span>你好世界!</span>
-                </div>
-                <div>
-                    <span><strong>HTML</strong></span>
-                    <br>
-                    <span>&lt;p&gt;Hello world!&lt;/p&gt;</span>
-                </div>
-                <br class="languages-container-size-2">
-                <div style="width: 46px">
-                    <span><strong>CSS</strong></span>
-                    <br>
-                    <span>p::after { content: "Hello world!"; }</span>
-                </div>
-                <div style="width: 25px">
-                    <span><strong>JS</strong></span>
-                    <br>
-                    <span>console.log("spillMySecret();");</span>
-                </div>
-                <br class="languages-container-size-1">
-                <div style="width: 28px" id="language-mobile-focus">
-                    <span><strong>C#</strong></span>
-                    <br>
-                    <span>Console.WriteLine("Hello world!");</span>
-                </div>
-                <br class="languages-container-size-2">
-                <div style="width: 46px">
-                    <span><strong>Java</strong></span>
-                    <br>
-                    <span>System.out.println("Hello world!");</span>
-                </div>
-                <div style="width: 74px">
-                    <span><strong>Python</strong></span>
-                    <br>
-                    <span>print("Hello world!")</span>
-                </div>
-                <div style="width: 60px">
-                    <span><strong>C/C++</strong></span>
-                    <br>
-                    <span>printf("Hello world!");</span>
-                </div>
-                <div style="width: 70px">
-                    <span><strong>LaTeX</strong></span>
-                    <br>
-                    <img src="content/latex.png" style="width:130px;margin-top:10px">
-                </div>
-
-                <br class="languages-container-size-2">
-                <div style="opacity: 0; width: 0; display: none" id="invis-thing-hehe">
-                    <span><strong>mcfunction</strong></span>
-                    <br>
-                    <span>tellraw @a {"text":"Hello world!"}</span>
-                </div>
-                <br class="languages-container-size-1">
-                <div style="width: 100px">
-                    <span><strong>Bash/Shell</strong></span>
-                    <br>
-                    <span>echo "Hello World"</span>
+                    <a class="info-panel info-panel-link" href="about.html" target="_self">
+                        <span class="panel-link">
+                            <span class="panel-link-text">More About Me</span>
+                            <span class="panel-link-arrow">⟩</span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- past projects -->
     <div class="section" id="projects">
-        <div class="inner-padding">
+        <div class="section-content">
+            <div class="info-row-flex info-row-reversed">
+                <div class="info-col">
+                    <h1>Projects</h1>
+                    <p>
+                        The best way to learn as a programmer is to program.
+                        I have no shortage of past projects under my belt.
+                        I've handpicked a shortlist of featured past projects below.
+                        You can also check out my full list of projects or my GitHub.
+                    </p>
+                </div>
+                <div class="info-col">
+                    <a class="info-panel info-panel-link" href="projects.html" target="_self">
+                        <h2>
+                            Full List of My Projects
+                        </h2>
 
-            <noscript>
-                <span class="large-monospace">Uh oh! I need JavaScript</span>
-                <p>You need to enable JavaScript to view my portfolio.</p>
-
-                <p><strong>Chrome, Edge, Opera:</strong></p>
-                <ol>
-                    <li>Navigate to <a href="chrome://settings/">chrome://settings/</a>.</li>
-                    <li>Search for "JavaScript".</li>
-                    <li>Under "Site Settings"/"Site Permissions", click on "JavaScript".</li>
-                    <li>Change it to "Allow".</li>
-                </ol>
-                <p><strong>Firefox:</strong></p>
-                <p>Uninstall any extension that may disable JavaScript in your browser.</p>
-            </noscript>
-
-            <div>
-                <h1 class="animation" data-animation-type="typewriter" data-typewriter-rate="50"
-                    data-typewriter-text="My Personal Projects." data-animation-playonscroll="true"
-                    data-animation-scroll-leeway="50" data-animation-next-element="projects-desc"></h1>
-
-                <p id="projects-desc" class="animation fade-initial" data-animation-head="false" 
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0"
-                data-fade-yoffset="-16" data-animation-next-element="projects-container">
-                    These are projects I work on in my spare time or as an occasional overkill school project.
-                    I take these projects as opportunities to go all-out and learn new languages and frameworks -
-                    this is in effect my learning space.
-                </p>
-
-                <div id="projects-container" class="showcases-container animation fade-initial" id="flylive"
-                    data-animation-head="false" data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0"
-                    data-fade-yoffset="-16">
-                    <div class="showcase-card showcase-half-width">
-                        <div class="project-vignette"></div>
-                        <img class="project-background" src="content/projects/flylive-1.jpg" alt="">
-                        <img src="content/logos/FlyLive Logo.png" alt="FlyLive Logo" class="project-header">
-                        <div class="project-description">
-                            <p>FlyLive was the only tool of its kind available publicly at the
-                                time. It
-                                allows flight simulator livestreamers to display simulator information on their screen.
-                            </p>
-                        </div>
-
-                        <div class="project-age-container">
-                            <span>At age: 13</span>
-                        </div>
-                    </div>
-
-                    <div class="showcase-card showcase-half-width">
-                        <div class="project-vignette"></div>
-                        <img class="project-background" src="content/projects/flychrono-1.png" alt="">
-                        <img src="content/logos/FlyChrono.png" alt="FlyChrono Logo" class="project-header">
-                        <div class="project-description">
-                            <p>
-                                FlyChrono is a time syncer for flight simulators. It syncs the simulator's time with the
-                                real-world time. Other solutions existed but FlyChrono was the only free solution.
-                            </p>
-                        </div>
-
-                        <div class="project-age-container">
-                            <span>At age: 14</span>
-                        </div>
-                    </div>
-
-                    <div class="showcase-card showcase-half-width">
-                        <div class="project-vignette"></div>
-                        <img class="project-background" src="content/projects/flylive-studio-1.jpg" alt="">
-                        <img src="content/logos/FlyLive Studio Logo.png" alt="FlyLive Studio Logo"
-                            class="project-header">
-                        <div class="project-description">
-                            <p>
-                                FlyLive Studio has helped build brands, careers and lives. It currently powers a
-                                significant amount of flight simulator livestreams. It is a complete reimagining of the
-                                old FlyLive.
-                            </p>
-                        </div>
-
-                        <div class="project-age-container">
-                            <span>At age: 15</span>
-                        </div>
-                    </div>
-
-                    <div class="showcase-card showcase-half-width">
-                        <div class="project-vignette"></div>
-                        <img class="project-background" src="content/projects/flychrono2-1.jpg" alt="">
-                        <img src="content/logos/FlyChrono2 Logo.png" alt="FlyChrono v2 Logo" class="project-header">
-                        <div class="project-description">
-                            <p>
-                                FlyChrono v2 was a rewrite of my old but successful FlyChrono. It featured new features
-                                such as a brand new UI, alarms and a mini-window mode. It is still used by many flight
-                                simmers.
-                            </p>
-                        </div>
-
-                        <div class="project-age-container">
-                            <span>At age: 16</span>
-                        </div>
-                    </div>
-
-                    <div class="showcase-card showcase-full-width">
-                        <div class="project-vignette"></div>
-                        <img class="project-background" src="content/projects/osb-1.png" alt="">
-                        <img src="content/logos/osb.png" alt="Open SkillBot Logo" class="project-header">
-                        <div class="project-description">
-                            <p>
-                                OpenSkillBot was a fun pastime project for me to learn the Discord API, and is inspired
-                                by the needs of some of the competitive gaming environments I've been in. It is a
-                                Discord
-                                bot that manages player ranks and skill using the TrueSkill system.
-                                <a href="https://github.com/CAG2Mark/OpenSkillBot" class="linkfix-white">View on
-                                    GitHub</a>
-                            </p>
-
-                        </div>
-
-                        <div class="project-age-container">
-                            <span>At age: 17</span>
-                        </div>
-                    </div>
+                        <span class="panel-link">
+                            <span class="panel-link-text">All Projects</span>
+                            <span class="panel-link-arrow">⟩</span>
+                        </span>
+                    </a>
+                    <a class="info-panel info-panel-link" href="https://github.com/CAG2Mark">
+                        <h2>
+                            My GitHub Profile
+                        </h2>
+                        
+                        <span class="panel-link">
+                            <span class="panel-link-text">GitHub</span>
+                            <span class="panel-link-arrow">⟩</span>
+                        </span>
+                    </a>
                 </div>
             </div>
-
-            <!-- sep -->
-            <div style="height: 16px"></div>
-
-            <h1 class="animation" data-animation-type="typewriter" data-typewriter-rate="50"
-                data-typewriter-text="Who I've worked for." data-animation-playonscroll="true"
-                data-animation-scroll-leeway="100" data-animation-next-element="workedfor-desc"></h1>
-
-            <p id="workedfor-desc" class="animation fade-initial" data-animation-head="false" 
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0"
-                data-fade-yoffset="-16" data-animation-next-element="hssc-container">
-                Occasionally, school-based organisations approach me to help them make things like a website or a widget.
-                These projects showcase my most mature and robust work. When my work impacts real people and organisations, 
-                I maximise the utilisation of my most developed skills.
-            </p>
-
-            <div id="hssc-container" class="showcases-container animation fade-initial" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16"
-                data-animation-next-element="issia-container">
-
-                <div id="hssc-header" class="showcase-header">
-                    <img src="content/projects/hssc.png" alt="HSSC Logo">
-                </div>
-
-                <div class="showcase-card showcase-half-width">
-                    <div class="project-vignette"></div>
-                    <img class="project-background" src="content/projects/hssc-1.jpg" alt="">
-                    <h2 class="project-header-text">HSSC Website</h2>
-                    <div class="project-description">
-                        <p>
-                            As a student organisation, the HSSC allows students of to browse
-                            their activities. It is also a place for them to put all their student-submitted
-                            articles.
-                        </p>
-                    </div>
-
-                    <div class="project-age-container">
-                        <span>At age: 16</span>
-                    </div>
-                </div>
-
-                <div class="showcase-card showcase-half-width">
-                    <div class="project-vignette"></div>
-                    <img class="project-background" src="content/projects/word-of-the-day-1.jpg" alt="">
-                    <h2 class="project-header-text">Word of the Day Widget</h2>
-                    <div class="project-description">
-                        <p>
-                            The HSSC provisioned the ‘Word of the Day’ widget to provide a daily opportunity for
-                            students to build their English vocabulary and incorporate learning into the school
-                            homepage.
-                        </p>
-                    </div>
-
-                    <div class="project-age-container">
-                        <span>At age: 16</span>
-                    </div>
-                </div>
+            
+            <div class="info-row-flex">
+                <h1>Featured Public Projects</h1>
             </div>
-
-            <div style="height: 32px"></div>
-
-            <div id="issia-container" class="showcases-container animation fade-initial" data-animation-head="false"
-                data-animation-type="fade" data-fade-time="300" data-fade-xoffset="0" data-fade-yoffset="-16">
-
-                <div id="issia-header" class="showcase-header light-text">
-                    <img src="content/projects/issia.png" class="org-logo" alt="ISSIA Logo">
-                </div>
-
-                <div class="showcase-card showcase-full-width">
-                    <div class="project-vignette"></div>
-                    <img class="project-background" src="content/projects/issia-1.jpg" alt="">
-                    <h2 class="project-header-text">ISSIA Website</h2>
-                    <div class="project-description">
-                        <p>
-                            The ISSIA is a large, international student-led organisation. The website serves as an
-                            online alternative to their physical magazine. It is also a place for new members to be
-                            recruited.
-                        </p>
-                    </div>
-
-                    <div class="project-age-container">
-                        <span>At age: 16</span>
-                    </div>
-                </div>
+            <div class="info-row-grid">
+                <a class="info-panel info-panel-link" href="flylivestudio.html?from=home" target="_self">
+                    <h2>FlyLive Studio</h2>
+                    <p>
+                        A flight simulator streaming suite offering unparalleled
+                        flexibility, and is used by some of the biggest
+                        livestreamers.
+                    </p>
+                    <span class="panel-link">
+                        <span class="panel-link-text">Find Out More</span>
+                        <span class="panel-link-arrow">⟩</span>
+                    </span>
+                </a>
+                <a class="info-panel info-panel-link" href="flychrono2.html?from=home" target="_self">
+                    <h2>FlyChrono v2</h2>
+                    <p>
+                        FlyChrono v2 is a flight simulator time-syncing tool. It aims to
+                        provide more and better features than existing paid solutions
+                        for free, while improving on my FlyChrono application.
+                    </p>
+                    <span class="panel-link">
+                        <span class="panel-link-text">Find Out More</span>
+                        <span class="panel-link-arrow">⟩</span>
+                    </span>
+                </a>
             </div>
-
-        </div>
+            <div class="info-row-flex">
+                <h1>Personal Tinkering</h1>
+            </div>
+            <div class="info-row-grid">
+                <a class="info-panel info-panel-link" href="https://github.com/CAG2Mark/OpenSkillBot">
+                    <h2>OpenSkillBot</h2>
+                    <p>
+                        A Discord bot for competitive game servers to manage players.
+                        This was created as a way for me to learn the Discord API.  
+                    </p>
+                    <span class="panel-link">
+                        <span class="panel-link-text">GitHub Page</span>
+                        <span class="panel-link-arrow">⟩</span>
+                    </span>
+                </a>
+                <a class="info-panel info-panel-link" href="https://github.com/CAG2Mark/MathsTestNew">
+                    <h2>Maths Test Framework</h2>
+                    <p>
+                        A framework for creating client-side maths assignments
+                        with automatic answer checking. This was created for a
+                        separate April Fools joke.
+                    </p>
+                    <span class="panel-link">
+                        <span class="panel-link-text">GitHub Page</span>
+                        <span class="panel-link-arrow">⟩</span>
+                    </span>
+                </a>
+            </div>
+            <div class="info-row-flex">
+                <h1>Work for Organisations</h1>
+            </div>
+            <div class="info-row-grid">
+                <div class="info-panel">
+                    <h2>HSSC</h2>
+                    <p>
+                        I had created a blog system and "Word of the Day" widget a school organisation
+                        known as the Humanities and Social Sciences Council.
+                    </p>
+                </div>
+                <a class="info-panel info-panel-link" href="http://issiamagazine.com/">
+                    <h2>ISSIA Magazine</h2>
+                    <p>
+                        The ISSIA is an international inter-school organisation aimed at cultivating
+                        global citizenship. I created their magazine website with a custom static
+                        site generator.
+                    </p>
+                    <span class="panel-link">
+                        <span class="panel-link-text">Visit ISSIA Magazine</span>
+                        <span class="panel-link-arrow">⟩</span>
+                    </span>
+                </a>
+            </div>
+        </div>  
     </div>
 
 
@@ -524,9 +298,8 @@
     </div>
 
     <!-- scripts -->
-    <script src="scripts/global.js?version=2"></script>
-    <script src="scripts/home.js?version=4"></script>
-    <script src="scripts/animatein.js"></script>
+    <script src="scripts/global.js?version=3"></script>
+    <script src="scripts/home.js?version=5"></script>
     <script src="scripts/eggs.js"></script>
 </body>
 

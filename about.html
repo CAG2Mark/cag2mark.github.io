@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-scroll="30">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mark Ng</title>
+
+    <base href="index.html" target="_blank">
+
+    <!-- GLOBAL CSS & FONTS -->
+    <link rel="stylesheet" href="styles/global.css?version=11">
+    <link rel="stylesheet" href="styles/animation-styles.css">
+    <link href="content/fonts/inter.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/about.css?version=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/png" href="content/icons/favicon.ico">
+
+    <!--  Essential META Tags -->
+
+    <meta property="og:title" content="About">
+    <meta property="og:description" content="I code and tinker. Check out all my work over my life.">
+    <meta property="og:image" content="https://markng.com/content/thumb.png">
+    <meta property="og:url" content="https://markng.com/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!--  Non-Essential, But Recommended -->
+
+    <meta property="og:site_name" content="About">
+    <meta name="twitter:image:alt" content="Mark Ng Emblem">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+
+    <!-- top navigation -->
+
+    <div class="navigation navigation-background noselect" id="navbar">
+        <div class="noselect">
+            
+            <div id="hamburger-wrapper">
+                <div class="hamburger-line hamburger-line-top" id="hamburger-line-top"></div>
+                <div class="hamburger-line hamburger-line-bottom" id="hamburger-line-bottom"></div>
+            </div>
+
+            <ul class="navigation-list noselect" id="navigation-list">
+                <li><a class="linkfix noselect" href="./index.html" target="_self" data-section-pair="cover">Home</a></li>
+                <li><a class="linkfix noselect navigation-selected" href="./about.html" target="_self" data-section-pair="about">About</a></li>
+                <li><a class="linkfix noselect" href="./projects.html" target="_self"
+                        data-section-pair="projects">Projects</a></li>
+                <li><a class="linkfix noselect" href="./index.html#contact" target="_self" data-section-pair="contact"
+                        data-section-bottom="true">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section" id="section-about">
+        <div id="navbar-pad"></div>
+        <a href="index.html" class="indented-link back-link" draggable="false" target="_self">← Back to Home</a>
+        <div class="section-content">
+            <div class="info-row-flex">
+                <div class="info-col">
+                    <h1 class="red-color">Hey, I'm Mark!</h1>
+                    <p>
+                        I'm a student from Hong Kong studying Computer Science and Mathematics.
+                        I enjoy classical music and play the piano as a hobby.
+                    </p>
+                    <p>
+                        Feel free to look around! You can find out more information about me by
+                        clicking on the card in this section, or scroll down to find out about
+                        some of my past projects.
+                    </p>
+                </div>
+                <div class="info-col">
+                    <div class="info-panel">
+                        <h2>
+                            Education
+                        </h2>
+                        <ul>
+                            <li>IB Alumni</li>
+                            <li id="hkust">Studying at The Hong Kong University of Science and Technology<span id="nooo"> Oh hi, Mark.</span></li>
+                            <li>Graduating in 2025</li>
+                        </ul>
+                        <h2>
+                            Interests
+                        </h2>
+                        <ul>
+                            <li>Computer Science &amp; Programming</li>
+                            <li>Mathematics</li>
+                            <li>Classical Music & Piano</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section-programming">
+        <div class="section-content">
+            <div class="info-row-flex info-row-reversed">
+                <div class="info-col">
+                    <h1>Computer Science</h1>
+                    <p>
+                        Computers were something that fascinated me since I was little.
+                        At around the age of 10, I created my first program: a tabbed web browser,
+                        following a tutorial I found on YouTube. Since then, my knowledge in different
+                        areas of programming has continued to flourish.
+                    </p>
+                    <p>
+                        More recently, I've been pairing my home-grown knowledge with 
+                        the rigour of formal education. This has allowed me to learn 
+                        the proper theory I need to succeed in the industry.
+                    </p>
+                </div>
+                <div class="info-col">
+                    <h2>Languages I'm fluent in</h2>
+                    <div class="language-container">
+                        <div class="language-item">C#</div>
+                        <div class="language-item">HTML</div>
+                        <div class="language-item">CSS</div>
+                        <div class="language-item">JavaScript/TypeScript</div>
+                        <div class="language-item">Python</div>
+                        <div class="language-item">LaTeX</div>
+                    </div>
+                    <h2>Languages I'm confident in</h2>
+                    <div class="language-container">
+                        <div class="language-item">C/C++</div>
+                        <div class="language-item">Java</div>
+                        <div class="language-item">Bash/Shell</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section-maths">
+        <div class="section-content">
+            <div class="info-row-flex">
+                <div class="info-col">
+                    <h1>Mathematics</h1>
+                    <p>
+                        Partly due to my interest in computer science, I also have
+                        a strong interest in mathematics. The fields which I find 
+                        the most interesting include calculus, analysis, linear algebra
+                        and discrete maths.
+                    </p>
+                </div>
+                <div class="info-col">
+                    <div class="info-panel">
+                        <h2>
+                            Exhibit A: Definition of continuity
+                        </h2>
+                        \[\forall \varepsilon, \exists \delta, |x - a| < \delta \implies |f(x) - L| < \varepsilon\]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section-programming">
+        <div class="section-content">
+            <div class="info-row-flex info-row-reversed">
+                <div class="info-col">
+                    <h1>Music</h1>
+                    <p>
+                        I enjoy classical music and play the piano. I don't have any full
+                        recordings to share, as I have only recently started playing seriously.
+                        However, I am about halfway through Chopin's Ballade No. 1 (and learning
+                        the coda in advance), and finishing
+                        it would be my first big accomplishment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="section" id="footer">
+
+        <p id="copyright">
+            © 2022 Mark Ng
+            <br>
+            <span style="font-size: 16px">
+                This portfolio and all of its systems are designed by Mark Ng
+            </span>
+            <br>
+            <br>
+            <span style="font-size: 16px">
+                Licensed under the GNU GPL-3.0 License
+            </span>
+        </p>
+    </div>
+
+    <!-- scripts -->
+    <script src="scripts/global.js?version=2"></script>
+    <script src="scripts/animatein.js"></script>
+    <script src="scripts/eggs.js"></script>
+</body>
+
+</html>
