@@ -116,10 +116,14 @@ body {
     text-decoration: none !important;
 
     transition: 250ms transform;
+
+    margin-top: 1px;
+
+    transform: translate(0, 1px);
 }
 
 .info-panel-link:hover .panel-link-arrow {
-    transform: translateX(3px);
+    transform: translate(3px, 1px);
 }
 
 h1,
