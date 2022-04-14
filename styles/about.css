@@ -1,9 +1,6 @@
 #section-about, #section-maths {
     background: #202020;
 }
-#section-programming {
-    background: #272727;
-}
 .language-container {
     user-select: none;
 }
