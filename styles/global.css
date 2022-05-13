@@ -356,6 +356,12 @@ h4 {
     transition: 400ms height, 250ms opacity;
 }
 
+.navigation-container {
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+}
+
 .navigation-background {
     border-radius: 8px;
     border-style: solid;
