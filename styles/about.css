@@ -1,10 +1,10 @@
 #section-about, #section-maths {
     background: #202020;
 }
-.language-container {
+.fancy-tag-container {
     user-select: none;
 }
-.language-item {
+.fancy-tag-item {
     margin: 0 2px 2px 0;
     background-color: #202020;
     border-radius: 8px;
@@ -24,7 +24,7 @@
 
     user-select: none;
 }
-.language-item:hover {
+.fancy-tag-item:hover {
     border-color: #4d4d4d;
 }
 
@@ -35,4 +35,12 @@
 
 #hkust:hover #nooo {
     display: inline;
+}
+
+hr {
+    border-color: #626262;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    margin: 26px 0;
 }
