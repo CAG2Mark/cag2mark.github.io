@@ -6,6 +6,7 @@ html[data-scroll="30"] .navigation-background {
 
 #cover {
     height: 100vh;
+    position: relative;
 }
 
 #about {
@@ -96,6 +97,8 @@ html[data-scroll="30"] .navigation-background {
     font-size: 150px;
     font-weight: 900;
     user-select: none;
+    
+    text-shadow: 4px 4px 40px rgba(0, 0, 0, 0.436);
 }
 #name-first {
     color: #f85757;
@@ -120,6 +123,8 @@ html[data-scroll="30"] .navigation-background {
 
     animation: animate-in-sep;
     animation-duration: 600ms;
+
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.436);
 }
 
 /* #endregion */
@@ -132,10 +137,9 @@ html[data-scroll="30"] .navigation-background {
     width: 600px;
     height: 600px;
     z-index: 1;
-
-    right: 9vw;
-
+    right: 0;
     overflow: visible;
+    padding: inherit;
 }
 
 #mn-svg {
@@ -298,7 +302,7 @@ html[data-scroll="30"] .navigation-background {
         animation-duration: 600ms;
     }
     #emblem-container {
-        right: 6vw;
+        right: 0;
     }
 }
 
