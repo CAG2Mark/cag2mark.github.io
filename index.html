@@ -8,7 +8,7 @@
     <title>Portfolio of Mark Ng</title>
 
     <!-- GLOBAL CSS & FONTS -->
-    <link rel="stylesheet" href="styles/global.css?version=14">
+    <link rel="stylesheet" href="styles/global.css?version=15">
     <link href="content/fonts/inter.css?version=1" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" href="content/icons/favicon.ico">
 
     <!-- PAGE SPECIFIC CSS -->
-    <link rel="stylesheet" href="styles/home.css?version=11">
+    <link rel="stylesheet" href="styles/home.css?version=12">
 
     <!--  Essential META Tags -->
 
@@ -65,33 +65,38 @@
 
     <!-- cover -->
     <div class="section" id="cover">
-
-        <div class="vertical-align" id="name-container">
-            <span class="name-item" id="name-first">Mark</span>
-            <div class="name-item" id="name-sep"></div>
-            <span class="name-item" id="name-second">Ng.</span>
+        <div id="cover-wrap">
+            <span id="name-wrap">
+                <div class="vertical-align" id="name-container">
+                    <span class="name-item" id="name-first">Mark</span>
+                    <div class="name-item" id="name-sep"></div>
+                    <span class="name-item" id="name-second">Ng.</span>
+                </div>
+            </span>
+    
+    
+            <span id="emblem-wrap">
+                <div class="vertical-align" id="emblem-container">
+                    <svg id="mn-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                        viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                        <path id="emblemM"
+                            d="M32 463v-40-94-113-98-32-15-1l-19 8 66 69 106 109 24 25c7 7 19 2 19-8v-68V95 70l-19 8 67 69 105 109 24 25c10 10 26-6 16-16l-66-69L249 87l-24-25c-7-7-19-2-19 8v203l19-8-66-68L53 87 29 62c-7-7-19-2-19 8v393c0 15 22 15 22 0z" />
+                        <path id="emblemMid"
+                            d="M72 463V363 206v-36l-19 8 66 69 106 110 24 24c7 8 19 2 19-7v-69-110-25l-19 8 66 69 106 109 24 25c7 7 19 2 19-8V270 107 70c0-15-22-15-22 0v303l19-8-67-69-105-109-24-25c-7-7-19-2-19 8v204l19-8-67-69L93 187l-25-25c-6-7-19-2-19 8v293c0 15 23 15 23 0z" />
+                        <path id="emblemN"
+                            d="M307 463v-66-108-24l-19 8 67 69 105 109 24 25c7 7 19 2 19-8v-40-95-114-100-48-1c0-15-22-15-22 0v398l19-8-67-69-105-109-24-25c-7-7-19-2-19 8v198c0 15 22 15 22 0z" />
+                    </svg>
+        
+                </div>
+            </span>
         </div>
-
-        <div class="vertical-align" id="emblem-container">
-            <svg id="mn-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-                <path id="emblemM"
-                    d="M32 463v-40-94-113-98-32-15-1l-19 8 66 69 106 109 24 25c7 7 19 2 19-8v-68V95 70l-19 8 67 69 105 109 24 25c10 10 26-6 16-16l-66-69L249 87l-24-25c-7-7-19-2-19 8v203l19-8-66-68L53 87 29 62c-7-7-19-2-19 8v393c0 15 22 15 22 0z" />
-                <path id="emblemMid"
-                    d="M72 463V363 206v-36l-19 8 66 69 106 110 24 24c7 8 19 2 19-7v-69-110-25l-19 8 66 69 106 109 24 25c7 7 19 2 19-8V270 107 70c0-15-22-15-22 0v303l19-8-67-69-105-109-24-25c-7-7-19-2-19 8v204l19-8-67-69L93 187l-25-25c-6-7-19-2-19 8v293c0 15 23 15 23 0z" />
-                <path id="emblemN"
-                    d="M307 463v-66-108-24l-19 8 67 69 105 109 24 25c7 7 19 2 19-8v-40-95-114-100-48-1c0-15-22-15-22 0v398l19-8-67-69-105-109-24-25c-7-7-19-2-19 8v198c0 15 22 15 22 0z" />
-            </svg>
-
-        </div>
-
     </div>
 
     <div class="section" id="about">
         <div class="section-content" id="about-wrapper">
             <div class="info-row-flex">
                 <div class="info-col">
-                    <h1 class="red-color">Hey, I'm Mark!</h1>
+                    <h1 class="red-color big">Hey, I'm Mark!</h1>
                     <p>
                         I'm a student from Hong Kong studying Computer Science and Mathematics.
                         I enjoy classical music and play the piano as a hobby.
@@ -136,10 +141,8 @@
         <div class="section-content">
             <div class="info-row-flex">
                 <div class="info-col">
-                    <h1>Projects</h1>
+                    <h1 class="red-color big">Projects.</h1>
                     <p>
-                        The best way to learn as a programmer is to program, and
-                        I have no shortage of past projects under my belt.
                         I've handpicked a shortlist of past projects below.
                         You can also check out my full list of projects or my GitHub.
                     </p>
@@ -282,28 +285,32 @@
 
     <!-- get in touch -->
     <div class="section" id="contact">
+        <div class="section-content">
+            <div class="info-row-flex">
+                <div class="info-col">
+                    <h1 class="red-color big">Get in Touch.</h1>
+                    <p>
+                        Feel free to ask me anything about my 
+                        skills or potential project ideas!
+                    </p>
+                    <p>
+                        If you would like my resume or CV, 
+                        please email me directly and let me know why you need it.
+                    </p>
+                </div>
+                <div class="info-col" id="contact-container">
 
-        <div class="width-wrapper">
-            <h1>Get in touch</h1>
-
-            <p>Ask me anything about my journey, skills or potential project ideas!</p>
-
-            <div id="email-container">
-                <a id="email-text">JavaScript required</a>
+                        <div id="email-container">
+                            <a id="email-text">JavaScript required</a>
+                        </div>
+                        <a style="margin-top: 12px" target="_blank" href="https://www.linkedin.com/in/mark-ng-b3958b135/"
+                        class="fa fa-linkedin"></a>
+    
+                        <a style="margin-top: 12px" target="_blank" href="https://www.github.com/cag2mark"
+                            class="fa fa-github"></a>
+                </div>
             </div>
-
-            <div class="horizontal-row">
-
-                <a style="margin-top: 12px" target="_blank" href="https://www.linkedin.com/in/mark-ng-b3958b135/"
-                    class="fa fa-linkedin"></a>
-
-                <a style="margin-top: 12px" target="_blank" href="https://www.github.com/cag2mark"
-                    class="fa fa-github"></a>
-
-            </div>
-
         </div>
-
     </div>
 
     <!-- footer -->
@@ -325,7 +332,7 @@
 
     <!-- scripts -->
     <script src="scripts/global.js?version=3"></script>
-    <script src="scripts/home.js?version=5"></script>
+    <script src="scripts/home.js?version=6"></script>
     <script src="scripts/eggs.js"></script>
 </body>
 

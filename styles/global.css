@@ -16,7 +16,7 @@ body {
 
     color: rgb(255, 255, 255);
     
-    background-color: #2e2e2e;
+    background-color: #292929;
 
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ body {
     margin: 16px;
 }
 
-.info-row-grid>* {
+.info-row-grid > * {
     flex: 40%;
     margin: 8px !important;
 }
@@ -134,8 +134,21 @@ h4 {
     font-weight: bold;
 }
 
+.big {
+    font-size: 44px;
+    line-height: 0.8em;
+}
+
 .red-color {
     color: #f85757;
+}
+
+.orange-color {
+    color: #f87d57;
+}
+
+.yellow-color {
+    color: #f8c057;
 }
 
 .vertical-align {
@@ -353,7 +366,7 @@ h4 {
     border-width: 1px;
     border-color: transparent;
 
-    transition: 400ms height, 250ms opacity;
+    transition: 400ms height, 250ms opacity, 400ms width, 400ms margin;
 }
 
 .navigation-container {
@@ -374,9 +387,9 @@ h4 {
     -webkit-box-shadow: 0px 0px 32px 5px rgba(0,0,0,0.3); 
     box-shadow: 0px 0px 32px 5px rgba(0,0,0,0.3);
 
-    background-color: rgba(29, 29, 29, 0.904);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    background-color: rgba(29, 29, 29, 0.8);
+    backdrop-filter: blur(16px) saturate(250%);
+    -webkit-backdrop-filter: blur(16px) saturate(250%);
 }
 
 a.skip-main {
@@ -652,7 +665,9 @@ p > a::after {
     }
 
     .navigation-open {
-        height: calc(100% - 24px);
+        height: calc(100% + 8px);
+        width: calc(100% + 8px);
+        margin: -4px;
     }
 }
 
@@ -722,7 +737,6 @@ p > a::after {
         flex-direction: column;
     }
 
-
     .info-col {
         padding: 12px 0px;
     }
@@ -730,14 +744,20 @@ p > a::after {
     .info-row-grid {
         margin: 0;
     }
-    .info-row-grid>* {
+    .info-row-grid > * {
         flex: 100%;
+        margin: 8px -2px 8px -2px !important;
     }
 
     .back-link {
         position: relative;
         top: 10px;
         transform: translateX(-8px);
+    }
+
+    .info-panel {
+        margin-left: -2px;
+        margin-right: -2px;
     }
 }
 

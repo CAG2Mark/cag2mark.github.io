@@ -6,7 +6,32 @@ html[data-scroll="30"] .navigation-background {
 
 #cover {
     height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#cover-wrap {
+    width: 100%;
+    height: 100%;
     position: relative;
+}
+
+#name-wrap {
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+
+    transition: transform 250ms ease-out;
+}
+
+#emblem-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    z-index: 1;
+
+    transition: transform 250ms ease-out;
 }
 
 #about {
@@ -14,10 +39,6 @@ html[data-scroll="30"] .navigation-background {
     background: #202020;
 
     overflow: hidden;
-}
-
-#about h1 {
-    font-size: 44px;
 }
 
 #about1 {
@@ -39,7 +60,6 @@ html[data-scroll="30"] .navigation-background {
 #contact {
     background: #252525;
     height: auto;
-    text-align: center;
 }
 
 /* #endregion */
@@ -156,17 +176,17 @@ html[data-scroll="30"] .navigation-background {
 }
 
 
-#emblem-container:hover #emblemM {
+#mn-svg:hover #emblemM {
     transform: translate(-1%, -2.5%);
     fill: #f85757;
 }
 
-#emblem-container:hover #emblemMid {
+#mn-svg:hover #emblemMid {
     fill: #f87d57;
 }
 
 
-#emblem-container:hover #emblemN {
+#mn-svg:hover #emblemN {
     transform: translate(1%, 2.5%);
     fill: #f8c057;
 }
@@ -308,6 +328,10 @@ html[data-scroll="30"] .navigation-background {
 
 /* #region contact */
 
+#contact-container {
+    text-align: center;
+}
+
 #email-container {
     border-radius: 16px;
     background-color: #2b2b2b;
@@ -318,6 +342,7 @@ html[data-scroll="30"] .navigation-background {
     overflow: auto; 
 
     margin: 0 auto;
+    text-align: center;
 }
 
 #email-container * {
@@ -404,6 +429,12 @@ body .modal {
     }
     .modal-dialog > h1 {
         font-size: 36px;
+    }
+
+    #emblem-container {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
     }
 }
 

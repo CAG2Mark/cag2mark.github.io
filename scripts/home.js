@@ -64,6 +64,36 @@ function handleScroll() {
     }
 }
 
+// Cover
+let cover = document.getElementById("cover");
+
+let nameWrap = document.getElementById("name-wrap");
+let emblemWrap = document.getElementById("emblem-wrap");
+
+let nameTransform = "translate(0, 0)";
+let emblemTransform = "translate(0, 0)";
+
+let NAME_VEL = 0.07;
+let EMBLEM_VEL = 0.03;
+
+cover.addEventListener("mousemove", handleMouseMove)
+cover.addEventListener("mouseleave", (ev) => {
+    nameTransform = "translate(0, 0)";
+    emblemTransform = "translate(0, 0)";
+})
+function handleMouseMove(ev) {
+    let x = ev.clientX - cover.getBoundingClientRect().width / 2;
+    let y = ev.clientY - cover.getBoundingClientRect().height / 2;
+
+    nameTransform = `translate(${x * NAME_VEL}px, ${y * NAME_VEL * 1.67}px)`;
+    emblemTransform = `translate(${x * EMBLEM_VEL}px, ${y * EMBLEM_VEL * 1.67}px)`;
+}
+
+setInterval(() => {
+    nameWrap.style.transform = nameTransform;
+    emblemWrap.style.transform = emblemTransform;
+}, 100);
+
 // Email
 
 // Done this way to prevent spambots

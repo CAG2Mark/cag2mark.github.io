@@ -31,6 +31,8 @@ var hamburgerOpen = false;
 
 hWrapper.addEventListener('click', hamburgerClicked);
 
+var lock = false;
+
 function hamburgerClicked() {
     hamburgerOpen = !hamburgerOpen;
     handleHamburgerChange();
@@ -56,14 +58,17 @@ function handleHamburgerChange() {
         hBottom.classList.add("hamburger-line-bottom-inactive");
     }
 
+    if (hamburgerOpen) {
+        document.getElementById("navbar").classList.add("navigation-open");
+    } else {
+        document.getElementById("navbar").classList.remove("navigation-open");
+    }
+
     for (var i = 0; i < navItems.length; i++) {
         let item = navItems[i];
         if (hamburgerOpen) {
             item.classList.add("navigation-item-peek");
-            document.getElementById("navbar").classList.add("navigation-open");
         } else {
-            document.getElementById("navbar").classList.remove("navigation-open");
-
             setTimeout(() => {
                 item.classList.remove("navigation-item-peek");
             }, 80);
