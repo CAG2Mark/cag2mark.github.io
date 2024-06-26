@@ -11,7 +11,8 @@ html[data-scroll="30"] .navigation-background {
 }
 
 #cover-wrap {
-    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
     height: 100%;
     position: relative;
 }
