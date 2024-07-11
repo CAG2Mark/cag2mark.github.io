@@ -399,6 +399,10 @@ a.skip-main {
     overflow:hidden;
     opacity: 0;
     z-index:-999;
+
+    top: 44px;
+
+    transition: 150ms opacity, 150ms top;
 }
 a.skip-main:focus, a.skip-main:active {
     color: #fff;
@@ -428,8 +432,6 @@ a.skip-main:focus, a.skip-main:active {
     background-color: rgba(29, 29, 29, 0.904);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-
-    transition: 150ms opacity;
 }
 
 .navigation-list {
