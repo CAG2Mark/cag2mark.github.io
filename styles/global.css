@@ -268,18 +268,16 @@ h4 {
     position: absolute;
     transform-origin: center center;
 
-    transition: top 300ms ease, bottom 300ms ease, transform 300ms ease;
-
     animation-timing-function: ease;
     animation-duration: 500ms;
 }
 
 @keyframes topline-in {
     0% {
-        transform: translateY(-5px);
+        transform: rotate(0deg) translateY(-5px);
     }
     40% {
-        transform: translateY(0px);
+        transform: rotate(0deg) translateY(0px);
     }
     100% {
         transform: rotate(45deg) translateY(0);
