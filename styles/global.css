@@ -158,12 +158,13 @@ h4 {
 }
 
 .section {
-    padding: 0 20%;
     overflow: auto;
 }
 
 .section-content {
-    margin: 60px 0
+    margin: 60px auto;
+    max-width: 1400px;
+    width: 90%;
 }
 
 .width-wrapper {
@@ -396,6 +397,10 @@ a.skip-main {
     overflow:hidden;
     opacity: 0;
     z-index:-999;
+
+    top: 44px;
+
+    transition: 150ms opacity, 150ms top;
 }
 a.skip-main:focus, a.skip-main:active {
     color: #fff;
@@ -425,8 +430,6 @@ a.skip-main:focus, a.skip-main:active {
     background-color: rgba(29, 29, 29, 0.904);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-
-    transition: 150ms opacity;
 }
 
 .navigation-list {
@@ -715,16 +718,12 @@ p > a::after {
         font-size: 8vw;
     }
 
-    .section {
-        padding: 0px calc(100vw - 95%);
-    }
-
     .standard-width {
-        margin: 0px calc(100vw - 95%)
+        margin: 0px 5%;
     }
 
     .section-content {
-        margin: 8px 0;
+        margin: 8px 5%;
     }
 
     .info-row-flex {
@@ -756,12 +755,6 @@ p > a::after {
     .info-panel {
         margin-left: -2px;
         margin-right: -2px;
-    }
-}
-
-@media (max-width: 1400px) {
-    .section {
-        padding: 0px calc(100vw - 90%);
     }
 }
 
