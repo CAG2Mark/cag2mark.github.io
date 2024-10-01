@@ -97,8 +97,8 @@ setInterval(() => {
 // Email
 
 // Done this way to prevent spambots
-let username = "markng989";
-let domain = "gmail.com";
+let username = "contact";
+let domain = "markng.com";
 
 let email = username + "@" + domain;
 
