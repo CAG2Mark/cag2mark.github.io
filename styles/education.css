@@ -3,14 +3,9 @@
 }
 
 hr {
-    border-color: #626262;
+    border-color: #444444;
     border-width: 2px;
     border-style: solid;
     border-radius: 2px;
     margin: 26px 0;
-}
-
-.project-screenshot {
-    width: 100%;
-    border-radius: 8px;
 }

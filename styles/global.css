@@ -50,6 +50,10 @@ body {
     margin: 16px;
 }
 
+.info-row {
+    margin: 16px;
+}
+
 .info-row-grid > * {
     flex: 40%;
     margin: 8px !important;
@@ -88,7 +92,15 @@ body {
     border-color: #4d4d4d;
 }
 
-.info-panel h3, .info-panel h2 {
+.info-panel h3 {
+    width: auto;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    user-select: none;
+}
+
+.info-panel h2 {
     width: auto;
     margin: 8px 0 4px 0;
     position: relative;
@@ -534,7 +546,7 @@ a.skip-main:focus, a.skip-main:active {
     transform: translateX(14px);
 }
 
-p > a {
+p > a, .fancy-link {
     color: white;
     border-radius: 6px;
     background-color: #ffffff17;
@@ -545,12 +557,13 @@ p > a {
     transition: background-color 250ms ease;
 }
 
-p > a:hover {
+p > a:hover .fancy-link:hover {
     background-color: #ffffff24;
 }
 
-p > a::after {
-    content: '🡕';
+p > a::after, .fancy-link::after {
+    content: ' open_in_new';
+    font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
     letter-spacing: normal;
