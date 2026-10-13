@@ -102,6 +102,10 @@ let domain = "markng.com";
 
 let email = username + "@" + domain;
 
+let container = document.getElementById("email-container");
 let lnk = document.getElementById("email-text");
-lnk.setAttribute("href", "mailto:" + email);
+container.setAttribute("href", "mailto:" + email);
 lnk.innerHTML = email;
+
+let pgp = document.getElementById("pgp-key");
+pgp.setAttribute("href", "content/files/pgpkey.asc");

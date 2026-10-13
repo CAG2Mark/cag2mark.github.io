@@ -333,20 +333,42 @@ html[data-scroll="30"] .navigation-background {
     text-align: center;
 }
 
-#email-container {
-    border-radius: 16px;
-    background-color: #2b2b2b;
+.email-row-container {
+    border-radius: 10px;
+    background-color: #202020;
+    border-color: #333333;
+    border-width: 1px;
+    border-style: solid;
     font-weight: bold;
-    width: 250px;
     font-size: 16px;
     line-height: 32px;
     overflow: auto; 
 
     margin: 0 auto;
+    padding: 2px 2px 1px 2px;
     text-align: center;
+    display: inline-block;
+    -webkit-box-shadow: 0px 0px 32px 5px rgba(0,0,0,0.15); 
+    box-shadow: 0px 0px 32px 5px rgba(0,0,0,0.15);
+    transition: 100ms border-color;
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
-#email-container * {
+.email-row-container:hover {
+    border-color: #4d4d4d;
+}
+
+#email-container {
+    width: 250px;
+}
+
+#pgp-key {
+    width: 50px;
+}
+
+.email-row-container * {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
